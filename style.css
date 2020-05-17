@@ -13,3 +13,11 @@ a {color:#489fb5;}
 .header-link{color:#354f52;}
 .header-main{color:#489fb5;}
 nav a {color:#985277;}
+
+.box {background: #A6808c;
+      width:200px;
+      height:100px;
+      padding:10px;
+      border: 10px dotted lightcoral;}
+
+}
