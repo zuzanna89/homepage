@@ -1,7 +1,7 @@
 body {
   background: #d6cfcb;
 }
-.main__heading {
+.main-heading {
   background:#a6808c;
   color: #565264;
 }
@@ -10,7 +10,7 @@ h2 {
 }
 
 h1 {
-  color: #ffcad4;
+  color: #565264;
 }
 
 .header-link {
@@ -52,6 +52,7 @@ nav a {
 
 .navigation__link--homepage {
   color: #552647;
+  margin-right: 20px;
 }
 
 .box {
