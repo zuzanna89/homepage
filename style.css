@@ -42,7 +42,7 @@ nav a {
 }
 
 .navigation {
-  background: #8dc8d6;
+  background: #b8b5b0;
   padding: 12px;
   border-radius: 5px;
 }
@@ -100,26 +100,26 @@ nav a {
 }
 
 .week-summary {
-  background: #937892;
-  color: #442f48;
+  background: #fefffe;
+  color: #565264;
   padding: 6px;
-  border: 2px solid #342137;
-  border-radius: 5px;
+  border: 1px dashed#342137;
+  border-radius: 2px;
   margin-bottom: 10px;
 }
 
 .week-summary__description{
-  color: #442f48;
+  color: #565264;
 }
 .week-summary__example {
-  color: #552647;
+  color: #565264;
 }
 .week-summary__remember {
   color:#41444b;
 }
 .week-summary__notes {
-    background:#a6808c;
-    color: #565264;
+    background:#565264;
+    color:#d6cfcb;
     border-radius: 2px;
 }
 .week-summary__title {
@@ -130,4 +130,8 @@ nav a {
 .about__heading {
     color:#176477;
 
+}
+.about__description {
+  background:#d6cfcb;
+  color:#41444b;
 }

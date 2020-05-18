@@ -1,117 +1,112 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header>
-        <nav class="navigation">
-          <a class="navigation__link--homepage" href="index.html"
-            >Strona główna</a
-          >
-          <a class="navigation__link" href="nauka-html.html">Nauka html</a>
-          <a class="navigation__link" href ="styles.html">Styles</a>
-          <a class="navigation__link" href ="javascript.html">JavaScript</a>
-          <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
-        </nav>
-      </header>
+      <nav class="navigation">
+        <a class="navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__link" href="styles.html">Styles</a>
+        <a class="navigation__link" href="javascript.html">JavaScript</a>
+        <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
+      </nav>
+    </header>
     <main class="main">
+      <header id="top">
+        <h1>Nauka html</h1>
+      </header>
 
-        <header id="top">
-
-            <h1>Nauka html</h1>
-        </header>
-
-        <p>Tutaj znajdują się triki i najlepsze praktyki dotyczące budowania treści w html.
+      <p>
+        Tutaj znajdują się triki i najlepsze praktyki dotyczące budowania treści
+        w html.
+      </p>
+      <section>
+        <h2>Moje ulubione skróty</h2>
+        <h3>Początki</h3>
+        <p>
+          Na czym polega html? Jest to pierwsza warstwa, która tworzy bazę i
+          zawiera treśc. Opakowujemy ją w style za pomocą CSS, a następnie
+          dzięki JavaScript możemy utworzyć interakcje z użytkownikami. Kliknij
+          link, aby przejść do specyfikacji.
+          <a href="#Specyfikacja">Specyfikacja</a>
+          Poznałam już kilka informacji o html. Później nauczyłam się kolejnej
+          po html warstwy, jaką jest css, który pozwala nadać style. Mój
+          <em>styl</em> na razie jest dość siermiężny i koślawy, ale staram się
+          jak mogę. Jeśli chcesz dowiedzieć się, co już wiem o stylach, zajrzyj tutaj 
+          <a href="styles.html">Styles</a>
         </p>
-        <section>
-            <h2>Moje ulubione skróty </h2>
-            <h3>Początki</h3>
-            <p>Pracuję w firmie IT, w której większość deweloperów zajmuje się <i>frontendem</i>. Postanowiłam ukończyć
-                ten
-                kurs, aby poznać lepiej ich pracę i zrozumieć czym zajmują się na co dzień i z jakimi problemami się
-                stykają.
-                Być może, jeśli będzie mi dobrze szło, rozważę ukończenie również innych kursów. Na czym polega html?
-                Kliknij link, aby przejść do specyfikacji. <a href="#Specyfikacja">Specyfikacja</a>
-            </p>
-        </section>
-        <section id="Specyfikacja">
-            <h2>Specyfikacja</h2>
-            <p>Pierwsza, publicznie dostępna, specyfikacja języka HTML, nazwana HTML Tags (pol. Znaczniki HTML), została
-                zamieszczona w Internecie przez Bernersa-Lee w 1991[3][4]. Zawierała 22 znaczniki, tworzące początkowy,
-                prosty szkielet HTML-a. Trzynaście z tych elementów istnieje do tej pory w specyfikacji HTML 4[5].
-                HTML został napisany w oparciu o język SGML, jednak nie posiadał formalnej definicji w SGML-u. Sytuacja
-                zmieniła się w połowie 1993, kiedy organizacja IETF opublikowała pierwszą propozycję specyfikacji języka
-                HTML autorstwa Bernersa-Lee i Dana Connolly – Hypertext Markup Language (HTML) Internet-Draft (pol.
-                szkic) –
-                zawierającą opis gramatyki w postaci SGML Document Type Definition (pol. definicja typu dokumentu)[6].
-            </p>
-        </section>
-        <article>
-            <h3>Przykład</h3>
-            <p>Przez ostatnie dni nie chciało mi się robić notatek. Nauczyłam się kolejnej po html, który służy do
-                zapisywania treści, warstwy, jaką jest css, który pozwala nadać style.
-                W tym tygodniu minął 50. dzień pracy z domu związany z koronawirusem.
-                W międzyczasie postanowiłam także wziąć udział w krótkim <em>pokazie</em>, bo webinarem bym go nie
-                nazwała, w
-                Software Development Academy, gdzie pani opowiadała o nauce Pythona, który z tego, co wiem jest
-                językiem przydatnym do przetwarzania danych, baz relacyjnych, tworzenia przewidywań, np. na
-                Netfliksie oraz do uczenia maszynowego.
+      </section>
+      <section id="Specyfikacja">
+        <h2>Specyfikacja</h2>
+        <p>
+          Pierwsza, publicznie dostępna, specyfikacja języka HTML, nazwana HTML
+          Tags (pol. Znaczniki HTML), została zamieszczona w Internecie przez
+          Bernersa-Lee w 1991. Zawierała 22 znaczniki, tworzące początkowy,
+          prosty szkielet HTML-a. Trzynaście z tych elementów istnieje do tej
+          pory w specyfikacji HTML 4. HTML został napisany w oparciu o język
+          SGML, jednak nie posiadał formalnej definicji w SGML-u. Sytuacja
+          zmieniła się w połowie 1993, kiedy organizacja IETF opublikowała
+          pierwszą propozycję specyfikacji języka HTML autorstwa Bernersa-Lee i
+          Dana Connolly – Hypertext Markup Language (HTML) Internet-Draft (pol.
+          szkic) – zawierającą opis gramatyki w postaci SGML Document Type
+          Definition (pol. definicja typu dokumentu).
+        </p>
+      </section>
+      <article class="week-summary">
+        <h3 class="week-summary--example">Przykład</h3>
+        <p class="week-summary--description">
+          Kiedyś coś dodam
+</p>
 
-            </p>
-        </article>
-    
-        <article>
-            <h3>Podsumowanie tygodnia</h3>
-            <p>Przez ostatnie dni trochę nie miałam siły ani ochoty zająć się programowaniem. Jednak wydarzenia
-                ostatnich dni, gdy znowu w pracy "wszystko mi nie wyszło" sprawiły, że postanowiłam znów spróbować.
-            </p>
-        </article>
-        <section>
-            <h2>Do zapamiętania z ostatnich dwóch tygodni </h2>
-            <p>Warstwy we frontendzie można porównać do <i>sąsiadów</i> mieszkających na różnych piętrach domu.
-                Zaczynamy od treści (tekstu), który znajduje się na parterze. Nad nim znajduje się html,
-                za pomocą którego przenosimy tekst czy treść na stronę. Nad nim znajduje się css, który może wpłynąć na
-                to jak html będzie wyglądał, np. jakiej czcionki użyjemy i jakiego koloru.
-                Nad nim znajduje się javascript, która może wpływać na wszystkich sąsiadów zalewając ich mieszkanie
-                wodą. JS służy do wydawawania poleceń i zamieniania treści na działania.
-                <br>
-                Komendy w html-u mają nawiasy trójkątne zwane ostrymi.
-                Literki p to paragrafy, czy też akapity. Header to tytuł dokumentu.
-                H1 do h6 to znaczniki podobne jak nagłówki i tekst w wordzie, które niejako nadają ważność poszczególnym
-                podtytułom.
-                <br>
-                Oprócz nich do pisania służą sekcje i artykuły. Artykuły są niczym kolumna sportowa w gazecie, gdy ją
-                wytniesz, samodzielnie nadal będzie miała sens.
-                <br> <b>Dokument dzieli się na poszczególne części - head, body i main, które posiadają niejako
-                    szkielety. Jeśli
-                    chcemy zmienić style, musimy to zrobić w części head-głowy. </b> Tam można również podlinkować style
-                zgromadzone w innej warstwie.
-                Ważne jest, aby zmienić język w części head i dostosować go do języka kraju, w którym ma działać dana
-                strona.
-                Ma to znaczenie w przypadku osób z problemami ze wzrokiem, ponieważ tekst głosowo może im zostać
-                przeczytany
-                np. w języku polskim.
-
-
-            </p>
-        </section>
-
+</article>
+        <h3>Podsumowanie tygodnia</h3>
+        <p>
+          Przez ostatnie dni trochę nie miałam siły ani ochoty zająć się
+          programowaniem. Jednak wydarzenia ostatnich dni, gdy znowu w pracy
+          "wszystko mi nie wyszło" sprawiły, że postanowiłam znów spróbować.
+        </p>
+  
+      <section>
+        <h2>Podstawowe informacje</h2>
+        <p>
+          Komendy w html-u mają nawiasy trójkątne zwane ostrymi. Literki p to
+          paragrafy, czy też akapity. Header to tytuł dokumentu. H1 do h6 to
+          znaczniki podobne jak nagłówki i tekst w wordzie, które niejako nadają
+          ważność poszczególnym podtytułom i decydują np. o domyślnym rozmiarze czcionki.
+          <br />
+          Oprócz nich do pisania służą sekcje i artykuły. Artykuły są niczym
+          kolumna sportowa w gazecie, gdy ją wytniesz, samodzielnie nadal będzie
+          miała sens.
+          <br />
+          <b
+            >Dokument dzieli się na poszczególne części - head, body i main,
+            które posiadają niejako szkielety. Aby utworzyć nowy dokument html
+            należy najpierw stworzyć szkielet. Można to zrobić za pomocą skrótu
+            !Tab. Jeśli chcemy zmienić style, musimy to zrobić w części
+            head-głowy.
+          </b>
+          Tam można również podlinkować style zgromadzone w innej warstwie.
+          Ważne jest, aby zmienić język w części head i dostosować go do języka
+          kraju, w którym ma działać dana strona. Ma to znaczenie w przypadku
+          osób z problemami ze wzrokiem, ponieważ tekst głosowo może im zostać
+          przeczytany np. w języku polskim.
+        </p>
+      </section>
     </main>
 
     <footer>
-        Dziękuję za uwagę, wszystkie prawa zastrzeżone.
-        <a href="#top">Wróć na górę strony</a>
-      </footer>
+      Dziękuję za uwagę, wszystkie prawa zastrzeżone.
+      <a href="#top">Wróć na górę strony</a>
+    </footer>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
