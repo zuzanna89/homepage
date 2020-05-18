@@ -13,6 +13,8 @@
           >Strona główna</a
         >
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__link" href ="styles.html">Styles</a>
+        <a class="navigation__link" href ="javascript.html">JavaScript</a>
         <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
       </nav>
     </header>
@@ -30,15 +32,15 @@
         stykają. Być może, jeśli będzie mi dobrze szło, rozważę ukończenie
         również innych kursów. Na czym polega html? Kliknij link, aby przejść do
         specyfikacji. <a href="#Specyfikacja">Specyfikacja</a>
-
-        Dziś jest mój drugi tydzień z nauką frontendu w ramach kursu WTF - Co
-        ten frontend. Jeśli chcesz dowiedzieć się więcej, sprawdź to sama
+        Jeśli chcesz dowiedzieć się więcej, sprawdź to sama
         <a href="https://cotenfrontend.pl">WTF. </a
         ><strong>To jest moja pierwsza strona html.</strong>
       </p>
-      <div class="box">Kliknij, aby lepiej mnie poznać
-        <div class="absolute-second">Witaj</div></div>
-      
+      <div class="box">
+        Kliknij, aby lepiej mnie poznać
+        <div class="absolute-second">Witaj</div>
+      </div>
+
       <section id="Notatki">
         <h2 class="week-summary__notes">Notatki</h2>
         <p class="week-summary__remember">
@@ -50,25 +52,27 @@
       <article class="week-summary">
         <h3 class="week-summary__example">Przykład</h3>
         <p class="week-summary__description"></p>
-          Przez ostatnie dni nie chciało mi się robić notatek. Nauczyłam się
-          kolejnej po html, który służy do zapisywania treści, warstwy, jaką
-          jest css, który pozwala nadać style. W tym tygodniu minął 50. dzień
-          pracy z domu związany z koronawirusem. W międzyczasie postanowiłam
-          także wziąć udział w krótkim <em>pokazie</em>, bo webinarem bym go nie
-          nazwała, w Software Development Academy, gdzie pani opowiadała o nauce
-          Pythona, który z tego, co wiem jest językiem przydatnym do
-          przetwarzania danych, baz relacyjnych, tworzenia przewidywań, np. na
-          Netfliksie oraz do uczenia maszynowego.
-        
+        Przez ostatnie dni nie chciało mi się robić notatek. Nauczyłam się
+        kolejnej po html, który służy do zapisywania treści, warstwy, jaką jest
+        css, który pozwala nadać style. W tym tygodniu minął 50. dzień pracy z
+        domu związany z koronawirusem. W międzyczasie postanowiłam także wziąć
+        udział w krótkim <em>pokazie</em>, bo webinarem bym go nie nazwała, w
+        Software Development Academy, gdzie pani opowiadała o nauce Pythona,
+        który z tego, co wiem jest językiem przydatnym do przetwarzania danych,
+        baz relacyjnych, tworzenia przewidywań, np. na Netfliksie oraz do
+        uczenia maszynowego.
       </article>
 
       <article class="week-summary">
-        <h3 class="week-summary__example">Sposób zapisu, czyli opowieść o wielbłądzie, kebabie, wężu i Pascalu</h3>
+        <h3 class="week-summary__example">
+          Sposób zapisu, czyli opowieść o wielbłądzie, kebabie, wężu i Pascalu
+        </h3>
         <p class="week-summary__description">
-            W naszym kursie możemy posługiwać się różnego rodzaju zapisami, jeśli chcemy użyć kilku słów jednocześnie.
-            Pierwszym z nich jest camelCase, który jak widać pierwsze słowo ma pisane z małej, a drugie z wielkiej litery. 
-            Drugim przykładem jest kebab-case, w którym słowa oddzielami myślnikiem niczym elementy szaszłyka patyczkiem.
-
+          W naszym kursie możemy posługiwać się różnego rodzaju zapisami, jeśli
+          chcemy użyć kilku słów jednocześnie. Pierwszym z nich jest camelCase,
+          który jak widać pierwsze słowo ma pisane z małej, a drugie z wielkiej
+          litery. Drugim przykładem jest kebab-case, w którym słowa oddzielami
+          myślnikiem niczym elementy szaszłyka patyczkiem.
         </p>
       </article>
       <section>
@@ -133,14 +137,52 @@
         </p>
       </section>
 
-        <h2 class="week-summary__notes">
-          Do zapamiętania z następnej lekcji
-        </h2>
-        <article class="week-summary">
-            <h3 class="week-summary__example">Nad ranem znaleźli młodego GIT-owca</h3>
-            <p class="week-summary__description">
-GIT otwierany jest w okienku terminala.
-            </p></article>
+      <h2 class="week-summary__notes">
+        Do zapamiętania z następnej lekcji
+      </h2>
+      <article class="week-summary">
+        <h3 class="week-summary__example">
+          Życie w terminalu
+        </h3>
+        <p class="week-summary__description">
+          Terminal, czyli tzw. <i> <b>czarne okienko </b> </i> jest uruchamiany
+          przez kliknięcie command+spacji i wybranie spotlight (na macu).
+          <br />W Visual Studio należy wybrać
+          <b>comm+shift+p i shell command in PATH.</b> <br />Podstawowe komendy
+          w terminalu to cd, które przenosi nas do odpowiedniego katalogu np.
+          <b>cd dev/ homepage.</b> <br /><b
+            >ls enter pokazuje rzeczy z katalogu domowego <br />ls-l pokazuje
+            listę wszystkie rzeczy <br />cd spacja.. (cd ..) pozwala na powrót
+            do katalogu wyżej, a cd ../ .. o dwa katalogi wyżej <br />mkdir
+            pozwala na stworzenie nowego katalogu <br />pwd pozwala pokazać całą
+            ścieżkę <br />code . uruchamia visual studio code w katalogu
+            homepage.
+          </b>
+        </p>
+      </article>
+      <article class="week-summary">
+        <h3 class="week-summary__example">
+          Nad ranem znaleźli młodego GIT-owca
+        </h3>
+        <p class="week-summary__description">
+          <b>GIT otwierany jest w okienku terminala. </b>
+          <br />GIT jest systemem kontroli wersji, który jest pomocny, gdy np.
+          skasowaliśmy przypadkowo plik, chcemy dokonać zmian, przywrócić
+          wcześniejszą wersję lub chcemy pracować nad projektem grupowym.
+          <br />Na dysku mamy jedynie aktualną wersję kodu. <br /><b
+            >Podstawowe komendy: <br />git version - wersja git <br />git config
+            --global user.name "" oraz git config --global user.email pozwalają
+            ustawić konfigurację. <br />git config --get user.name i git config
+            --get user.email pozwalają sprawdzić, czy nazwy podane w
+            konfiguracji. <br />commit (commit -m "") pozwala zapisać zmiany,
+            które mają być "zacommitowane" <br />git status pozwala sprawdzić
+            aktualny stan plików i podejrzeć, co można zapisać <br />git init
+            pozwala utworzyć nowy katalog (repozytorium) <br />podstawowy flow
+            prac z gitem to git status git add. git commit -m"" git push.
+            <br />Polecenie git push pozwala "przepchnąć" zmiany do GitHuba.
+          </b>
+        </p>
+      </article>
     </main>
 
     <footer>
