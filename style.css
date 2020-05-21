@@ -117,6 +117,11 @@ nav a {
 .week-summary__remember {
   color:#41444b;
 }
+
+.week-summary__remember--js {
+  background:#489fb5;
+  color:#552647;
+}
 .week-summary__notes {
     background:#565264;
     color:#d6cfcb;
@@ -125,7 +130,6 @@ nav a {
 .week-summary__title {
   color: #342137;
 }
-
 
 .about__heading {
     color:#176477;

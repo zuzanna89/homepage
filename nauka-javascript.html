@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <a class="navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__link" href="nauka-style.html">Nauka style</a>
+        <a class="navigation__link" href="nauka-javascript.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header id="top">
+        <h1>JavaScript</h1>
+      </header>
+      <article class="week-summary">
+        <h3 class="week-summary--example">Do czego JavaScript</h3>
+        <p class="week-summary--description">
+          Pozwala na interakcje z użytkownikiem i "robi rzeczy". Korzysta ze
+          skryptu ECMA (ES6+), który jest ustandaryzowanym językiem
+          programowania. Kod wrzucamy tuż przed zakończeniemy body, zaczynamy go
+          znacznikiem script. Aby połączyć kod z dokumentem js należy użyć opcji
+          src (nie href).
+          <br />
+          <br />
+          <b
+            >JavaScript składa się z:
+            <br />
+            <br />
+            -wartości,
+            <br />
+            -operacji porównywania,
+            <br />
+            -literałów,
+            <br />
+            -zmiennych,
+            <br />
+            -obiektów
+            <br />
+            -i funkcji.</b
+          >
+
+          <br />
+          <br />
+          Polecenie <b>console.log</b> pozwala na zobaczenie działania kodu w
+          konsoli (console), która znajduje się w narzędziach deweloperskich.
+          <b>Alt+command+I </b>pozwala otworzyć narzędzia deweloperskie. W
+          Windowsie i w Linuksie są to F12.
+          <br />
+          <br />
+          <b>const (zmienna) pozwala przypisać wartości np. const age</b>, gdzie
+          w osobnym miejscu zdefiniujemy nasz wiek age=32, lub const firstName =
+          'Zuzia', ma stałe połączenie. Zmienna <b>let</b> pozwala zmienić
+          (podmienić) wartość np. let newName i np. pod newName dopisujemy inne
+          imię. <br />
+          <b>literały są zapisywane przez tzw. backtick ``</b> i wyglądają tak:
+          console.log ('Siema, nazywam się ${firstName')i mam ${age} lat.`)
+        </p>
+      </article>
+      <article class="week-summary">
+        <h3 class="week-summary--example">Typy proste w js (primitives)</h3>
+        <p class="week-summary--description">
+          string - tekst, który musimy wziąć w pojedynczy lub podwójny
+          cudzysłów.
+          <br />
+          number <br />
+          bigint - duża liczba <br />
+          boolean - true lub false <br />
+          wartość celowo niezdefiniowana, po to, abyśmy mogli ją później dopisać
+          <br />undefined - brak definicji <br />
+          symbol (rzadko używane)
+          <br />
+          polecenie <b>typeof</b> pozwala sprawdzić jakiego typu jest dana
+          zmienna np. typeof newName=string, typeof age=number, typeof
+          carColor=null. <br /><b>Immutability</b> oznacza, że nie można zmienić
+          primitive values, możemy jedynie dopisać im wartości, a raczej
+          edytować połączenie między nimi.
+        </p>
+      </article>
+      <article class="week-summary">
+        <h3 class="week-summary__example">
+          Funkcje w JS
+        </h3>
+
+      </article>
+    </main>
+  </body>
+</html>

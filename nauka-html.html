@@ -14,8 +14,8 @@
           >Strona główna</a
         >
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="styles.html">Styles</a>
-        <a class="navigation__link" href="javascript.html">JavaScript</a>
+        <a class="navigation__link" href="nauka-style.html">Styles</a>
+        <a class="navigation__link" href="nauka-javascript.html">JavaScript</a>
         <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
       </nav>
     </header>
@@ -40,7 +40,8 @@
           Poznałam już kilka informacji o html. Później nauczyłam się kolejnej
           po html warstwy, jaką jest css, który pozwala nadać style. Mój
           <em>styl</em> na razie jest dość siermiężny i koślawy, ale staram się
-          jak mogę. Jeśli chcesz dowiedzieć się, co już wiem o stylach, zajrzyj tutaj 
+          jak mogę. Jeśli chcesz dowiedzieć się, co już wiem o stylach, zajrzyj
+          tutaj
           <a href="styles.html">Styles</a>
         </p>
       </section>
@@ -61,26 +62,41 @@
         </p>
       </section>
       <article class="week-summary">
-        <h3 class="week-summary--example">Przykład</h3>
+        <h3 class="week-summary--example">Klan, czyli mafia</h3>
         <p class="week-summary--description">
-          Kiedyś coś dodam
-</p>
+          DOM posiada rodzinę, czyli elementy, to tzw. węzły (node). Html jest
+          nestorem i ma dwoje dzieci, head i body, które mają swoje dzieci,
+          header, main itp. Porównanie do drzewa (genealogicznego). Podstawowe
+          jednostki rodzinne to rodzic i dziecko. Występuje też więc
+          dziedziczenie. Jeśli styl dzieci został zdefiniowany, np. przez klasę,
+          to nie dziedziczą one stylu rodzica (jawnie zdefiniowany). Jeśli nie
+          został zdefiniowany, dostaną taki styl jak rodzice.
 
-</article>
-        <h3>Podsumowanie tygodnia</h3>
-        <p>
-          Przez ostatnie dni trochę nie miałam siły ani ochoty zająć się
-          programowaniem. Jednak wydarzenia ostatnich dni, gdy znowu w pracy
-          "wszystko mi nie wyszło" sprawiły, że postanowiłam znów spróbować.
+          <br />
+          <br />
+          W przypadku <b>linków</b>, jeśli wyłączymy styl klasy lub elementu, to
+          link automatycznie będzie koloru fioletowego, ponieważ tak definiuje
+          to <b>user agent stylesheet - webkit</b>, sprawdź w narzędziach
+          deweloperskich. <br />
+          Jeśli użyjemy wartości <b>inherit</b> w narzędziach deweloperskich, element
+          odziedziczy styl po rodzicu.
         </p>
-  
+      </article>
+      <h3>Podsumowanie tygodnia</h3>
+      <p>
+        Przez ostatnie dni trochę nie miałam siły ani ochoty zająć się
+        programowaniem. Jednak wydarzenia ostatnich dni, gdy znowu w pracy
+        "wszystko mi nie wyszło" sprawiły, że postanowiłam znów spróbować.
+      </p>
+
       <section>
         <h2>Podstawowe informacje</h2>
         <p>
           Komendy w html-u mają nawiasy trójkątne zwane ostrymi. Literki p to
           paragrafy, czy też akapity. Header to tytuł dokumentu. H1 do h6 to
           znaczniki podobne jak nagłówki i tekst w wordzie, które niejako nadają
-          ważność poszczególnym podtytułom i decydują np. o domyślnym rozmiarze czcionki.
+          ważność poszczególnym podtytułom i decydują np. o domyślnym rozmiarze
+          czcionki.
           <br />
           Oprócz nich do pisania służą sekcje i artykuły. Artykuły są niczym
           kolumna sportowa w gazecie, gdy ją wytniesz, samodzielnie nadal będzie
@@ -106,7 +122,6 @@
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.
       <a href="#top">Wróć na górę strony</a>
     </footer>
-
     <script src="main.js"></script>
   </body>
 </html>
