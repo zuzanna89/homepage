@@ -65,3 +65,12 @@ console.log(deathStar.commander)
 console.log(deathStar.commander.name)
 
 deathStar.fire('Rebel ship')
+
+console.log(deathStar['name'])
+
+const myProperty ='name'
+
+const showMeProperty = (myProperty) => {
+    console.log (`Twoja własność ${myProperty} to: ${deathStar[myProperty]}`);
+}
+showMeProperty ('levels')
