@@ -14,17 +14,19 @@
         >
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="navigation__link" href="nauka-style.html">Nauka style</a>
-        <a class="navigation__link" href="nauka-javascript.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="nauka-javascript.html"
+          >Nauka JavaScript</a
+        >
         <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
       </nav>
     </header>
     <main class="main">
       <header id="top">
-        <h1>JavaScript</h1>
+        <h1 class="main-heading">JavaScript</h1>
       </header>
-      <article class="week-summary">
-        <h3 class="week-summary--example">Do czego JavaScript</h3>
-        <p class="week-summary--description">
+      <section>
+        <h3 class="week-summary__notes">Do czego JavaScript</h3>
+        <p class="week-summary__explained">
           Pozwala na interakcje z użytkownikiem i "robi rzeczy". Korzysta ze
           skryptu ECMA (ES6+), który jest ustandaryzowanym językiem
           programowania. Kod wrzucamy tuż przed zakończeniemy body, zaczynamy go
@@ -65,10 +67,11 @@
           <b>literały są zapisywane przez tzw. backtick ``</b> i wyglądają tak:
           console.log ('Siema, nazywam się ${firstName')i mam ${age} lat.`)
         </p>
-      </article>
-      <article class="week-summary">
-        <h3 class="week-summary--example">Typy proste w js (primitives)</h3>
-        <p class="week-summary--description">
+      </section>
+      
+      <article class="frame">
+        <h3 class="frame__title">Typy proste w js (primitives)</h3>
+        <p class="frame__description">
           string - tekst, który musimy wziąć w pojedynczy lub podwójny
           cudzysłów.
           <br />
@@ -86,12 +89,80 @@
           edytować połączenie między nimi.
         </p>
       </article>
-      <article class="week-summary">
-        <h3 class="week-summary__example">
+      <article class="frame">
+        <h3 class="frame__title">
           Funkcje w JS
         </h3>
+        <p class="frame__description">
+          Funkcje posiadają argumenty, np.liczby, a słowem kluczowym jest
+          return, które determinuje co ma nam zwrócić dana funkcja - jakiego
+          rodzaju wynik. Jeśli chcemy uzyskać wynik w rozumieniu matematycznym,
+          możemy użyć nazwy funkcji calculate. Jeśli funkcja nie ma
+          zdefiniowanego return, to będzie to undefined.
+          <br />Argumentów możemy podać kilka w jednym miejscu lub nie podawać
+          żadnego.
 
+          <br />
+          <br />
+          <b> Po co stosuje się funkcje? </b>
+          <br />
+          <br />Deklarujemy kod, który się powtarza zgodnie z zasadą DRY (don't
+          repeat yourself). <br />Kod staje się też bardziej czytelny.
+          <br />Łatwiej nam znaleźć błędy. <br />Wystarczy, że zmienimy dane w
+          jednym miejscu, by zaktualizowały się dane wszędzie.
+        </p>
       </article>
+      <section>
+        <h2 class="notes">
+          JavaScript jest językiem obiektowym
+        </h2>
+        <p class="notes_description">
+          Nasz świat jest obiektowy - np. człowiek ma imię, kolor skóry, wiek,
+          kolor oczu, włosów, zawód itp. <br />Samochód ma kolor, moc silnika,
+          liczbę koni mechanicznych, liczbę kół, liczbę miejsc itp., są to tak
+          zwane <b>właściwości lub własności (properties)</b>.
+          <br />
+          <br />
+          Zarówno człowiek, jak i samochód mogą wykonywać różne
+          <b>akcje (zadania)</b>, np. człowiek może chodzić, jeździć, mówić,
+          tańczyć, spać a samochód jeździć do przodu, cofać się, używać
+          klaksona, wycieraczek itp.
+          <br />
+          <br />
+          Również obiekty w JavaScript możemy opisać.
+          <br />
+          <b
+            >Używamy do tego par, które składają się z klucza i wartości
+            (key:value), np. diameter:10000, name:'deathStar' i na końcu
+            wstawiamy , .
+          </b>
+          <br />Klucz musi być unikalny w ramach obiektu (wystąpić tylko raz), a
+          jako wartość możemy podać
+          <b
+            >prymitywy (string, boolean, number itp. oraz funkcje i
+            zagnieżdżenia). Poniżej opisany obiekt - Gwiazda śmierci.
+            <br />
+          </b>
+          <br />
+          <img src="deathstar.png" alt="Gwiazda śmierci" />
+          <br />
+          Poniżej możemy zobaczyć jak wygląda <b>zagnieżdżenie obiektu.</b>
+          <br />
+          <img src="nesting.png" alt="Nesting objects" />
+          <br />
+          <b>Możemy się odwołać do danej właściwości (znaleźć jej wartość) używając
+          .notation (dot notation). W zależności od tego jak bardzo chcemy
+          zagłębić się w szczegóły, należy po dot wypisać wartość, której
+          szukamy jak na poniższym obrazku.</b>
+          <br/>
+          <img src="dot-notation.png" alt="Dot notation"/>
+          <br>
+            Wywołanie akcji ustawionej w js jako fire.
+          <br/>
+          <img src="rebel-ship-destroyed.png" alt="Action"/>
+          <br>
+        </p>
+      </section>
     </main>
   </body>
 </html>
