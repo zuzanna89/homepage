@@ -15,7 +15,9 @@
         >
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="navigation__link" href="nauka-style.html">Nauka style</a>
-        <a class="navigation__link" href="nauka-javascript.html">Nauka JavaScript</a>
+        <a class="navigation__link" href="nauka-javascript.html"
+          >Nauka JavaScript</a
+        >
         <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
       </nav>
     </header>
@@ -77,19 +79,19 @@
           link automatycznie będzie koloru fioletowego, ponieważ tak definiuje
           to <b>user agent stylesheet - webkit</b>, sprawdź w narzędziach
           deweloperskich. <br />
-          Jeśli użyjemy wartości <b>inherit</b> w narzędziach deweloperskich, element
-          odziedziczy styl po rodzicu.
+          Jeśli użyjemy wartości <b>inherit</b> w narzędziach deweloperskich,
+          element odziedziczy styl po rodzicu.
         </p>
       </article>
 
       <section>
         <h2 class="notes__title">Podstawowe informacje</h2>
         <p>
-          Komendy w html-u mają nawiasy trójkątne zwane ostrymi. Literki p to
-          paragrafy, czy też akapity. Header to tytuł dokumentu. H1 do h6 to
-          znaczniki podobne jak nagłówki i tekst w wordzie, które niejako nadają
-          ważność poszczególnym podtytułom i decydują np. o domyślnym rozmiarze
-          czcionki.
+          HTML składa się ze znaczników, które mają nawiasy trójkątne zwane
+          ostrymi. Literki p to paragrafy, czy też akapity. Header to tytuł
+          dokumentu. H1 do h6 to znaczniki podobne jak nagłówki i tekst w
+          wordzie, które niejako nadają ważność poszczególnym podtytułom i
+          decydują np. o domyślnym rozmiarze czcionki.
           <br />
           Oprócz nich do pisania służą sekcje i artykuły. Artykuły są niczym
           kolumna sportowa w gazecie, gdy ją wytniesz, samodzielnie nadal będzie
@@ -99,7 +101,7 @@
             >Dokument dzieli się na poszczególne części - head, body i main,
             które posiadają niejako szkielety. Aby utworzyć nowy dokument html
             należy najpierw stworzyć szkielet. Można to zrobić za pomocą skrótu
-            !Tab. Jeśli chcemy zmienić style, musimy to zrobić w części
+            <b>!Tab</b>. Jeśli chcemy zmienić style, musimy to zrobić w części
             head-głowy.
           </b>
           Tam można również podlinkować style zgromadzone w innej warstwie.
@@ -107,15 +109,117 @@
           kraju, w którym ma działać dana strona. Ma to znaczenie w przypadku
           osób z problemami ze wzrokiem, ponieważ tekst głosowo może im zostać
           przeczytany np. w języku polskim.
+          <br />
+          <br />Poszczególne słowa możemy pogrubić używając znaczników
+          <b>b lub strong</b>. Litera b pochodzi od bold, natomiast strong
+          używamy, by podkreślić ważność jakiegoś elementu. Jeśli chcemy
+          zastosować kursywę, używamy znacznika <b><i>i lub em</i></b
+          >, gdzie i pochodzi od italics, natomiast em, podobnie jak strong ma
+          znaczenie semantyczne i może zostać zastosowane np. do wyrażenia
+          ironii. Aby rozpocząć pisanie od nowego wiersza, należy użyć znacznika
+          <b>br</b>, który jest samozamykający.
         </p>
+      </section>
+      <section>
+        <h2 class="notes__title">
+          Znaczniki w html - listy, definicje i tabele
+        </h2>
+        Html posiada także inne znaczniki. Jednymi z nich są listy. Dodając
+        kolejne elementy do list, nie musimy wpisywać znacznika nowego wiersza
+        (br). Występują 2 podstawowe typy list:
+        <ul>
+          <li>unordered list oznaczany jako "ul"</li>
+          <li>ordered list onaczana jako "ol"</li>
+        </ul>
+        Powyższy zapis to lista unordered (nieuporządkowana), domyślnym symbolem
+        jest kropka.
+        <ol>
+          <li>unordered list (ul)</li>
+          <li>ordered list (ol)</li>
+        </ol>
+        Ten zapis to lista uporządkowana zawierająca liczby porządkowe.
+        <br />
+        Możemy także zagnieździć listę w liście, jeśli z jakiegoś powodu byłoby
+        to wymagane lub uzasadnione. Obrazuje to poniższy przykład:
+        <br />
+        <br />Zwierzęta dzielą się na:
+        <ol>
+          <li>roślinożerne,</li>
+          <li>mięsożerne,</li>
+          <li>wszystkożerne, np.:</li>
+          <ul>
+            <li>człowiek</li>
+            <li>świnia</li>
+          </ul>
+        </ol>
+        W tym przypadku "klamry" zewnętrzne stanowią znaczniki ol, natomiast
+        pozycje człowiek i świnia są "otoczone" klamrami ul. Jeśli chcemy
+        ostylować daną listę i np. zmienić symbol lub sposób numerowania, możemy
+        to zrobić nadając klasę liście (list-style lub list-style-type), jak na
+        poniższych przykładach.
+        <ol class="list-ordered">
+          <li>liczba 1</li>
+          <li>liczba 2</li>
+        </ol>
+        <ul class="list-unordered">
+          <li>słowo 1</li>
+          <li>słowo 2</li>
+        </ul>
+        Kolejnym rodzajem znacznika jest dl (description list), który występuje
+        razem z description term (dt), czyli definicją, którą chcemy opisać i
+        robimy to za pomocą dd, czyli description details.
+        <dl>
+          <dt>warzenie piwa</dt>
+          <dd>
+            w znaczeniu szerszym pod tym pojęciem rozumie się ogół czynności
+            mających na celu wytworzenie piwa jako gotowego produktu
+            spożywczego. W wąskim znaczeniu warzeniem piwa określa się gotowanie
+            brzeczki z chmielem w kotle warzelnym.
+          </dd>
+        </dl>
+        Następnym znacznikiem jest tabela (table), która zawiera poniższe elementy:
+        <ul>
+          <li>tr (table row)</li>
+          <li>td (table data cell), czyli komórka tabeli</li>
+          <li>thead (table header), czyli nagłówek tabeli</li>
+          <li>th, czyli komórka w nagłówku tabeli</li>
+          <li>tbody, czyli ciałko tabeli</li>
+          <li>oraz caption, czyli opis tabeli</li>
+        </ul>
+        <table class="table">
+          <caption>Opis tabeli</caption>
+          <thead>
+            <tr>
+              <th>Tydzień</th>
+              <th>Lekcja</th>
+              <th>Czas trwania</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>I</td>
+              <td>WTF:intro</td>
+              <td>5:00</td>
+            </tr>
+            <tr>
+              <td>II</td>
+              <td>Ścieżki kariery</td>
+              <td>7:12</td>
+            </tr>
+            <tr>
+              <td>III</td>
+              <td>GIT</td>
+              <td>12:56</td>
+            </tr>
+          </tbody>
+        </table>
+
       </section>
     </main>
 
     <footer>
-      
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.
       <b> <a href="#top">Wróć na górę strony</a></b>
     </footer>
-    
   </body>
 </html>

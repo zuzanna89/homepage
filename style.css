@@ -146,3 +146,15 @@ nav a {
   color: #fefefe;
   border-radius: 2px;
 }
+
+.list-ordered{
+  list-style-type:upper-roman;
+}
+.list-unordered{
+  list-style-type: square;
+}
+.table{
+  table-layout: fixed;
+  border-collapse: separate;
+  background: #e1fefd;
+}
