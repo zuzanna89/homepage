@@ -75,21 +75,23 @@
         <h3 class="frame__title">Flexbox</h3>
         Flexbox służy przede wszystkim do wyśrodkowywania elementów. Własność,
         którą stosujemy to flex. Przy okazji div poznaliśmy własności block,
-        inline oraz inline-block. Poznaliśmy też położenie (position) takie jak
+        inline oraz inline-block. W przypadku flex w html też dobrze użyć div,
+        aby wprowadzić go w html. Poznaliśmy też położenie (position) takie jak
         relative, fixed i sticky. Na potrzeby tego ćwiczenia utworzymy nową
-        stronę <a href="flexbox.html">Flexbox</a>. Domyślnie flex posiada
+        stronę
+        <a href="flexbox.html">Flexbox</a>. Domyślnie flex posiada
         display:block, przy zmianie na flex zmienia pozycję z poziomej na
         pionową. Flex porusza się w dwóch osiach - row i column i jest to
-        flex-direction. Row jest wartością domyślną. Flex-wrap pozwala na
+        <b>flex-direction</b>. Row jest wartością domyślną. Flex-wrap pozwala na
         zawijanie naszych "pudełek" wierszy i kolumn. Dostępne parametry to:
         <ul>
           <li class="frame__important">nowrap</li>
           <li class="frame__important">wrap</li>
           <li class="frame__important">wrap-reverse</li>
         </ul>
-        Jeśli chcemy zdefiniować w jednej linicje zarówno flex-direction, jak i
+        Jeśli chcemy zdefiniować w jednej linijce zarówno flex-direction, jak i
         flex-wrap możemy zapisać je np. zamiast flex-direction:row;
-        flex-direction:wrap jako flex-flow: row wrap;
+        flex-direction:wrap jako <b>flex-flow: row wrap</b>;
         <br />
         <br />
         Kolejne przydatne własności to:
@@ -98,8 +100,13 @@
           <li class="frame__important">align-content</li>
           <li class="frame__important">align-items</li>
         </ul>
-        justify-content pozwala na ustawienie elementów wzdłuż osi
-        flex-direction i oferuje poniższe warianty:
+        <dl>
+          <dt class="dt">justify-content</dt>
+          <dd>
+            pozwala na ustawienie elementów wzdłuż osi flex-direction i oferuje
+            poniższe warianty:
+          </dd>
+        </dl>
         <ul>
           <li class="frame__important">flex-start</li>
           <li class="frame__important">flex-end</li>
@@ -130,19 +137,55 @@
           całego układu.
         </dl>
         <p>
-        jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są obecnie,
-        możemy użyć własności order.
-        <br />
-        konkretne elementy mogą się rozszerzać lub kurczyć, gdy wybierzemy
-        flex-grow:liczba i flex-shrink:liczba, można też równocześnie ustawić
-        flex-grow i flex-shrink. Flex-basis to tzw. rozmiar bazowy, który jeśli
-        usuniemy np. szerokość w naszym flex-direction:row, to zachowa się jak
-        szerokość, a jeśli wysokość w flex-direction:column, to zachowa się jak
-        wysokość.
-        <br />skrót flex pozwala opisać wszystkie 3 wartości na raz
-        flex-grow-flex-shrink-flex-basis
+          Jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są
+          obecnie, możemy użyć własności <b>order</b> i nadać poszczególnym
+          elementom różne numery (liczby), które ustawią je w pożądanej
+          kolejności.
+          <br />
+          konkretne elementy mogą się rozszerzać lub kurczyć, gdy wybierzemy
+          flex-grow:liczba i flex-shrink:liczba, można też równocześnie ustawić
+          flex-grow i flex-shrink. Flex-basis to tzw. rozmiar bazowy, który
+          jeśli usuniemy np. szerokość w naszym flex-direction:row, to zachowa
+          się jak szerokość, a jeśli wysokość w flex-direction:column, to
+          zachowa się jak wysokość.
+          <br />skrót flex pozwala opisać wszystkie 3 wartości na raz
+          flex-grow-flex-shrink-flex-basis
         </p>
       </article>
+      <section class="notes">
+        <h2 class="notes__title">Przykłady działania flexbox</h2>
+        <p class="notes__description">
+          Podstawy tworzenia flexboxa w CSS:
+          <img src="flexbox-basic.png" alt="Podstawy tworzenia flexbox" />
+          <br />
+          <br />
+          Widok przy ustawieniu display na "flex":
+          <img src="flexbox-display-flex.png" alt="Widok display:flex" />
+          <br />
+          <br />
+          Widok po dodaniu kilku wierszy:
+          <br />
+          <img src="dodanie rows.png" alt="Dodanie wierszy" />
+          <br />
+          <br />
+          Widok przy zmianie flex-direction z domyślnego row na column:
+          <br />
+          <img src="column.png" alt="Column-reverse" />
+          <br />
+          Widok przy column-reverse:
+          <br />
+          <br />
+          <img src="column-reverse.png" alt="Column-reverse" />
+          <br />
+          <br />
+          Efekt działania przy wrap, nowrap, wrap-reverse;
+          <br />
+          <br />
+          <img src="wrap.png" alt="Wrap" >
+          <img src="nowrap.png"alt="Nowrap">
+          <img src="wrap-reverse" alt="Wrap-reverse">
+        </p>
+      </section>
     </main>
     <footer>
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.
