@@ -1,43 +1,79 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navigation">
-          <a class="navigation__link--homepage" href="index.html"
-            >Strona główna</a
-          >
-          <a class="navigation__link" href="nauka-html.html">Nauka html</a>
-          <a class="navigation__link" href ="nauka-style.html">Nauka style</a>
-          <a class="navigation__link" href ="nauka-javascript.html">Nauka JavaScript</a>
-          <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
-        </nav>
+      <nav class="navigation">
+        <a class="navigation__link--homepage" href="index.html"
+          >Strona główna</a
+        >
+        <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__link" href="nauka-style.html">Nauka style</a>
+        <a class="navigation__link" href="nauka-javascript.html"
+          >Nauka JavaScript</a
+        >
+        <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
+      </nav>
+    </header>
+    <main class="main">
+      <header id="top">
+        <h1 class="main-heading">Style</h1>
       </header>
-      <main class="main">
-        <header id="top">
-          <h1 class="main-heading">Style</h1>
-        </header>
-          <section>
-            <h2 class="notes__title">O czym będzie ta część?</h2>
-          <p class="notes__description">To się okaże</p>
-        </section>
-        <section id="Notatki">
-            <h2 class="notes__title">Notatki</h2>
-            <p class="notes__description">
-              Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
-              czego się nauczyłam. W fioletowych ramkach umieszczę ciekawe przykłady
-              zastosowania lub definicje, które sprawiają mi największy problem.</p>
-              </section>
-      </main>
-      <footer>
-      
-        Dziękuję za uwagę, wszystkie prawa zastrzeżone.
-        <b> <a href="#top">Wróć na górę strony</a></b>
-      </footer>
-</body>
+      <section>
+        <h2 class="notes__title">O czym będzie ta część?</h2>
+        <p class="notes__description">To się okaże</p>
+      </section>
+      <section id="Notatki">
+        <h2 class="notes__title">Notatki</h2>
+        <p class="notes__description">
+          Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
+          czego się nauczyłam. W fioletowych ramkach umieszczę ciekawe przykłady
+          zastosowania lub definicje, które sprawiają mi największy problem.
+        </p>
+      </section>
+      <section>
+        <h2 class="notes__title">Normalizacja vs. reset</h2>
+        <p class="notes__description">
+          Przeglądarki mają domyślnie ustawione style, które, jeśli nie
+          nadpiszemy własnych, mają ustawione określone wartości i właściwości.
+          Jeśli chcemy podejrzeć jakie są aktualne style, możemy w narzędziach
+          deweloperskich podejrzeć je jako "user agent stylesheet"
+          <b
+            >Reset powoduje usunięcie wszystkich ustawień stylów, ale sprawia,
+            że tekst staje się mało czytelny, nie jest więc domyślnie
+            zalecany.</b
+          >
+          Jeśli chcemy wykonać reset, należy usunąć powiązanie z dotychczasowym
+          plikiem stylów, w znaczniku <i>style</i> przed częścią main należy
+          zmienić margin i padding na zero oraz wpisać w outline: none. Zmiana
+          ustawień na outline: none jest wysoce niezalecana, ppnieważ utrudnia
+          korzystanie ze strony osobom, które mają np. wady wzroku lub
+          korzystają tylko z klawiatury do nawigacji strony, outline to ramka,
+          która pokazuje nam, w którym miejscu strony się znajdujemy. Aby usunąć
+          styl w listach należy wybrać list-style: none. Aby zastosować tę
+          operację należy użyć selektora gwiazdki *, który jest selektorem
+          uniwersalnym i wybiera wszystkie elementy na stronie. <br />Mniej
+          inwazyjną metodą zmiany stylów jest <b>normalizacja</b>, która pozwala
+          na ich zmianę czy ujednolicenie i dostosowanie do przeglądarek, aby
+          style były czytelne i sensowne, usuwa też błędy występujące w
+          przeglądarkach. Aby ją zastosować, należy skopiować z internetu plik
+          (fragment kodu, zbiór reguł) normalize.css i wkleić w nowym pliku ze
+          stylami. Można odwołanie do nowego pliku wkleić na wszystkich stronach
+          powyżej odwołania do naszego regularnego pliku css. Na przykładzie tej
+          strony, widać, że pole menu domyślnie "rozciągnęło" się na szerokość
+          całej strony, a tam, gdzie nie zastosowaliśmy normalizacji, pozostał
+          margines.
+        </p>
+      </section>
+    </main>
+    <footer>
+      Dziękuję za uwagę, wszystkie prawa zastrzeżone.
+      <b> <a href="#top">Wróć na górę strony</a></b>
+    </footer>
+  </body>
 </html>

@@ -1,3 +1,8 @@
+html {
+  box-sizing: border-box;
+}
+
+
 body {
   background: #ffffff;
   color: #1d384b;
@@ -30,7 +35,7 @@ article {
 }
 
 a {
-  color: #FF8A6C;
+  color: #ff8a6c;
 }
 
 nav a {
@@ -147,13 +152,13 @@ nav a {
   border-radius: 2px;
 }
 
-.list-ordered{
-  list-style-type:upper-roman;
+.list-ordered {
+  list-style-type: upper-roman;
 }
-.list-unordered{
+.list-unordered {
   list-style-type: square;
 }
-.table{
+.table {
   table-layout: fixed;
   border-collapse: separate;
   background: #e1fefd;
