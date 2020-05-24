@@ -18,6 +18,7 @@
           >Nauka JavaScript</a
         >
         <a class="navigation__link" href="moje-hobby.html">Moje hobby</a>
+        <a class="navigation__link" href="flexbox.html">Flexbox</a>
       </nav>
     </header>
     <main class="main">
@@ -70,6 +71,78 @@
           margines.
         </p>
       </section>
+      <article class="frame">
+        <h3 class="frame__title">Flexbox</h3>
+        Flexbox służy przede wszystkim do wyśrodkowywania elementów. Własność,
+        którą stosujemy to flex. Przy okazji div poznaliśmy własności block,
+        inline oraz inline-block. Poznaliśmy też położenie (position) takie jak
+        relative, fixed i sticky. Na potrzeby tego ćwiczenia utworzymy nową
+        stronę <a href="flexbox.html">Flexbox</a>. Domyślnie flex posiada
+        display:block, przy zmianie na flex zmienia pozycję z poziomej na
+        pionową. Flex porusza się w dwóch osiach - row i column i jest to
+        flex-direction. Row jest wartością domyślną. Flex-wrap pozwala na
+        zawijanie naszych "pudełek" wierszy i kolumn. Dostępne parametry to:
+        <ul>
+          <li class="frame__important">nowrap</li>
+          <li class="frame__important">wrap</li>
+          <li class="frame__important">wrap-reverse</li>
+        </ul>
+        Jeśli chcemy zdefiniować w jednej linicje zarówno flex-direction, jak i
+        flex-wrap możemy zapisać je np. zamiast flex-direction:row;
+        flex-direction:wrap jako flex-flow: row wrap;
+        <br />
+        <br />
+        Kolejne przydatne własności to:
+        <ul>
+          <li class="frame__important">justify-content</li>
+          <li class="frame__important">align-content</li>
+          <li class="frame__important">align-items</li>
+        </ul>
+        justify-content pozwala na ustawienie elementów wzdłuż osi
+        flex-direction i oferuje poniższe warianty:
+        <ul>
+          <li class="frame__important">flex-start</li>
+          <li class="frame__important">flex-end</li>
+          <li class="frame__important">center</li>
+          <li class="frame__important">space-between</li>
+          <li class="frame__important">space-around</li>
+        </ul>
+
+        <dl>
+          <dt class="dt">align-content</dt>
+          <dd>
+            oferuje również takie własności jak powyżej i pozwala na ustawianie
+            wierszy/ kolumn wzdłuż osi przeciwnej do flex-direction. Domyślną
+            wartością jest <i>stretch</i>, który próbuje zawsze zmieścić tyle
+            treści ile się da.
+          </dd>
+
+          <dt class="dt">align-items</dt>
+          <dd>
+            pozwala na edytowanie wartości wewnątrz danego rzędu/ kolumny.
+            Domyślnie align-item jest ustawiony na opcje stretch, co oznacza, że
+            jeśli np. podwyższymy dany element poprzez dodanie tekstu, to inne
+            elementy znajdujące się w tym samym wierszu, dostosują się do niego.
+          </dd>
+
+          <dt class="dt">align-self</dt>
+          pozwala na edytowanie naszego elementu niezależnie od położenia reszty
+          całego układu.
+        </dl>
+        <p>
+        jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są obecnie,
+        możemy użyć własności order.
+        <br />
+        konkretne elementy mogą się rozszerzać lub kurczyć, gdy wybierzemy
+        flex-grow:liczba i flex-shrink:liczba, można też równocześnie ustawić
+        flex-grow i flex-shrink. Flex-basis to tzw. rozmiar bazowy, który jeśli
+        usuniemy np. szerokość w naszym flex-direction:row, to zachowa się jak
+        szerokość, a jeśli wysokość w flex-direction:column, to zachowa się jak
+        wysokość.
+        <br />skrót flex pozwala opisać wszystkie 3 wartości na raz
+        flex-grow-flex-shrink-flex-basis
+        </p>
+      </article>
     </main>
     <footer>
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.

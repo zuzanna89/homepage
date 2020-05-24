@@ -82,12 +82,11 @@ nav a {
   top: 60px;
   border: 1px dashed lightskyblue;
   border-radius: 50%;
-  margin-left: 1220px;
+  margin-left: 1250px;
   position: fixed;
 }
 
 .absolute-second {
-  position: sticky;
   background: #ff8a88;
   width: 60px;
   height: 20px;
@@ -101,6 +100,7 @@ nav a {
   margin-right: 20px;
   margin-bottom: 10px;
   margin-left: 30px;
+  position: sticky;
 }
 
 .main {
@@ -134,7 +134,10 @@ nav a {
   background: #a3e6de;
   color: #1d384b;
 }
-
+.frame__important{
+  color: #ff6b6b;
+  font-weight: bold;
+}
 .notes {
   color: #1d384b;
 }
@@ -162,4 +165,7 @@ nav a {
   table-layout: fixed;
   border-collapse: separate;
   background: #e1fefd;
+}
+.dt {
+  font-weight: bold;
 }
