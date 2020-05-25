@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-  <html lang="pl">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-      <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    </head>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
   <body>
     <header>
-      <nav class="navigation">
-        <a class="navigation__link--homepage" href="/index.html"
+      <nav class="navigation-flex">
+        <a class="navigation-flex__link--homepage" href="index.html"
           >Strona główna</a
         >
-        <a class="navigation__link" href="/html/nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="/html/nauka-style.html">Nauka style</a>
-        <a class="navigation__link" href="/html/nauka-javascript.html"
+        <a class="navigation-flex__link" href="html/nauka-html.html">Nauka html</a>
+        <a class="navigation-flex__link" href="html/nauka-style.html">Nauka style</a>
+        <a class="navigation-flex__link" href="html/nauka-javascript.html"
           >Nauka JavaScript</a
         >
-        <a class="navigation__link" href="/html/moje-hobby.html">Moje hobby</a>
-        <a class="navigation__link" href="/html/flexbox.html">Flexbox</a>
+        <a class="navigation-flex__link" href="html/moje-hobby.html">Moje hobby</a>
+        <a class="navigation-flex__link" href="html/flexbox.html">Flexbox</a>
+        <a class="navigation-flex__link" href="html/background.html">Background</a>
       </nav>
     </header>
     <main class="main">
+      <br />
       <header id="top">
         <h1 class="main-heading">Style</h1>
       </header>
@@ -134,9 +136,9 @@
 
           <dt class="dt">align-self</dt>
           <dd>
-          pozwala na edytowanie naszego elementu niezależnie od położenia reszty
-          całego układu.
-        </dd>
+            pozwala na edytowanie naszego elementu niezależnie od położenia
+            reszty całego układu.
+          </dd>
         </dl>
         <p>
           Jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są
@@ -268,12 +270,54 @@
         <h2 class="notes__title">Tła</h2>
         <p class="notes__description">
           Istnieje 8 podstawowych własności tła i są to:
-          <ul>
-            <li class="frame__important">background:image:url('ścieżka do pliku)</li>
-            <li class="frame__important">background:position - zawiera takie własności jak top, right, bottom, left</li>
-          </ul>
-      </section>
+        </p>
 
+        <ul>
+          <li class="frame__important">
+            background:image:url('ścieżka do pliku)
+          </li>
+          <li class="frame__important">
+            background:position - zawiera takie własności jak top, right,
+            bottom, left
+          </li>
+          <li>
+            background:repeat - pozwala powtórzyć tło, jeśli jest taka potrzeba
+            i o ile jest na tyle małe, że można taką operację przeprowadzić. Tło
+            można powielać względem osi-x,-y i na kilka innych sposobów
+          </li>
+          <li>
+            background:attachment - ma własności scroll, local, fixed, dzięki
+            niemu możemy scrollować stronę razem z tłem (scroll jest wartością
+            domyślną)
+          </li>
+          <li>
+            background:origin - definiuje w którym miejscu tło powinno się
+            zaczynać (border-box, padding-box, margin-box)
+          </li>
+          <li>
+            background:clip - definiuje w którym miejscu tło powinno być cięte
+            (border-box, padding-box, margin-box)
+          </li>
+          <li class="frame__important">
+            background:color
+          </li>
+          background:size - pozwala np. użyć opcji contain, czyli tło zmieści
+          się tam, gdzie jest treść
+        </ul>
+      </section>
+      <article class="frame">
+        <h3 class="frame__title">Gradienty</h3>
+        <p class="frame__description">
+          Gradienty
+          <br />
+          <br />
+          Jeśli chcemy, aby nasze tło miało gradient i było częściowo
+          przezroczyste musimy w wartości background:color wybrać rgb(a), gdzie
+          rgb oznacza red green blue, natomiast "a" pozwala zdefiniować stopień
+          przezroczystości, np. rgba (255,225,255,0.5), gdzie ostatnia wartość
+          to alpha. Gradienty możemy przetestować np. na stronie <a href ="https://cssgradient.io/">CSS Gradient</a>
+        </p>
+      </article>
     </main>
     <footer>
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.

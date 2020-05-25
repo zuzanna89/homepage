@@ -1,10 +1,16 @@
 .page {
-    background-image: url('../img/flower-background.jpg');
-    min-height: 100vh;
-    
+  background-image: url("../img/flower-background.jpg");
+  min-height: 100vh;
+  background-position: bottom center;
+  background-repeat: repeat-x;
 }
 
-.content{
-    background-color: navy;
-    color:#fefefe;
+.content {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    346deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(121, 60, 9, 0.3295693277310925) 20%,
+    rgba(255, 246, 0, 0.5284488795518207) 100%
+  );
 }
