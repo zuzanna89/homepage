@@ -1,0 +1,10 @@
+.page {
+    background-image: url('../img/flower-background.jpg');
+    min-height: 100vh;
+    
+}
+
+.content{
+    background-color: navy;
+    color:#fefefe;
+}
