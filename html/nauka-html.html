@@ -14,7 +14,9 @@
           >Strona główna</a
         >
         <a class="navigation__link" href="/html/nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="/html/nauka-style.html">Nauka style</a>
+        <a class="navigation__link" href="/html/nauka-style.html"
+          >Nauka style</a
+        >
         <a class="navigation__link" href="/html/nauka-javascript.html"
           >Nauka JavaScript</a
         >
@@ -46,6 +48,24 @@
           <a href="/html/nauka-style.html">Style</a>
         </p>
       </section>
+
+      <article class="frame">
+        <h3 class="frame__title">Gdy musisz użyć &lt; w tekście</h3>
+        <p class="frame__description">
+          Czasem w tekście w html z różnych powodów musisz użyć znacznika &lt;.
+          Wtedy w kodzie pokazuje się błąd oznaczający niedomknięty nawias. Aby
+          sobie z tym poradzić, możesz użyć następujacych "zamienników":
+        </p>
+
+        <ul>
+          <li class="frame__important">&lt; zapisywany jest jako lt</li>
+          <li class="frame__important">&gt; zapisywany jest jako gt</li>
+          <li class="frame__important">&le; zapisywany jest jako le</li>
+          <li class="frame__important">&ge; zapisywany jest jako ge</li>
+        </ul>
+        Przed musi się pojawić symbol &, a po ;
+      </article>
+
       <section id="Specyfikacja">
         <h2 class="notes__title">Specyfikacja</h2>
         <p class="notes__description">
@@ -177,7 +197,8 @@
             brzeczki z chmielem w kotle warzelnym.
           </dd>
         </dl>
-        Następnym znacznikiem jest tabela (table), która zawiera poniższe elementy:
+        Następnym znacznikiem jest tabela (table), która zawiera poniższe
+        elementy:
         <ul>
           <li>tr (table row)</li>
           <li>td (table data cell), czyli komórka tabeli</li>
@@ -187,13 +208,15 @@
           <li>oraz caption, czyli opis tabeli</li>
         </ul>
         <table class="table">
-          <caption>Opis tabeli</caption>
+          <caption>
+            Opis tabeli
+          </caption>
           <thead>
             <tr>
               <th>Tydzień</th>
               <th>Lekcja</th>
               <th>Czas trwania</th>
-              </tr>
+            </tr>
           </thead>
           <tbody>
             <tr>
@@ -213,7 +236,14 @@
             </tr>
           </tbody>
         </table>
-
+      </section>
+      <section class="notes">
+        <h3 class="notes__title">Formularze</h3>
+        <p class="notes__description">
+          Formularze służą do komunikacji ze światem zewnętrznym (na obcym
+          serwerze lub na naszej stronie).
+          Podstawowy znacznik to &lt;form&gt;
+        </p>
       </section>
     </main>
 

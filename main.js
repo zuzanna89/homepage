@@ -91,7 +91,7 @@ const humanOne = {
 
 const humanTwo = {
     name: 'Stefan',
-    age: humanOne.age,
+    age: 15,
     address: {
         street: 'Krakowska',
         city: humanOne.address.city,
@@ -101,7 +101,7 @@ const humanTwo = {
 console.log (humanOne)
 console.log (humanTwo)
 
-humanOne.age = 23;
+humanOne.age = 30;
 
 console.log (humanOne)
 console.log (humanTwo)
@@ -112,7 +112,25 @@ console.log (humanOne)
 console.log (humanTwo)
 
 
+if (humanOne.age > humanTwo.age){
+    console.log ('Human one jest starszy niż human 2');
+}
+else if (humanOne.age<humanTwo.age) {
+    console.log ('Human two jest starszy niż human 1');
 
+}else{
+        console.log ('Human one i two są równolatkami');
+    }
 
+const myNumber = 8;
 
-
+switch (myNumber) {
+case 7: 
+console.log ('jestem siódemką');
+break;
+case 9: 
+console.log ('jestem dziewiątką');
+break;
+default: 
+console.log('jestem czymś innym');
+}
