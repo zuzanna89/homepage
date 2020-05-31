@@ -300,41 +300,80 @@
             type=submit pozwala na utworzenie przycisku, który wysyła formularz
           </li>
         </ul>
-        <p>Formularz type=text;
-        <img src="/img/forms.png" alt="forms">
-      </p>
-      <p>Fieldset - grupowanie typu danych
-        <img src="/img/forms-fieldset.png" alt="fieldset"></p>
-        <p>Formularz fieldset type:radio
-          <img src="/img/forms-radio.png" alt="radio">
+        <p>
+          Formularz type=text;
+          <img src="/img/forms.png" alt="forms" />
         </p>
-        <p>Formularz type:checkbox
-          <img src="/img/forms-checkbox.png" alt="checkbox"></p>
+        <p>
+          Fieldset - grupowanie typu danych
+          <img src="/img/forms-fieldset.png" alt="fieldset" />
         </p>
-        <p>Formularze typów:tel, number, email, range 
-          <img src="/img/forms-tel,number,email,range.png" alt="types">
+
+        <p>
+          Formularz fieldset type:radio
+          <img src="/img/forms-radio.png" alt="radio" />
         </p>
-        <p>Formularz typu:password
-          <br/>
-          <img src="/img/forms-password.png" alt="password">
+        <p>
+          Formularz type:checkbox
+          <img src="/img/forms-checkbox.png" alt="checkbox" />
         </p>
-        <p>Formularz typu:file
-        <img src="/img/forms-file.png" alt="file">
-      </p>
-      <p>Formularz select
-        <img src="/img/forms-select.png" alt="select">
-      </p>
-      <p>Formularz textarea
-        <img src="/img/forms-textarea.png" alt="textarea">
-</p>
-<p>Formularz typu:submit
-  <img src="/img/forms-submit.png" alt="submit">
-</p>
+
+        <p>
+          Formularze typów:tel, number, email, range
+          <img src="/img/forms-tel,number,email,range.png" alt="types" />
+        </p>
+        <p>
+          Formularz typu:password
+          <br />
+          <img src="/img/forms-password.png" alt="password" />
+        </p>
+        <p>
+          Formularz typu:file
+          <img src="/img/forms-file.png" alt="file" />
+        </p>
+        <p>
+          Formularz select
+          <img src="/img/forms-select.png" alt="select" />
+        </p>
+        <p>
+          Formularz textarea
+          <img src="/img/forms-textarea.png" alt="textarea" />
+        </p>
+        <p>
+          Formularz typu:submit
+          <img src="/img/forms-submit.png" alt="submit" />
+        </p>
       </section>
       <section class="notes">
         <h2 class="notes__title">GET i POST</h2>
         <p class="notes__description">
-          Dane z naszych wypełnionych formularzy chcemy gdzieś wysłać
+          Dane z naszych wypełnionych formularzy chcemy gdzieś wysłać, np. na
+          stronę internetową. GET wyśle wartości dopisując do adresu strony
+          treść formularza, natomiast POST nie zmieni nazwy strony, jest więc
+          zalecana jako ta bezpieczniejsza. Ważne jest to, że jeśli w formularzu
+          zdefiniujemy value, to mimo tego, że może nazywać się inaczej niż
+          label, to właśnie dane z value zostaną przesłane do formularza. Get
+          zwykle używamy do odbierania danych, a post do ich wysyłania. Enctype
+          służy do wysyłania danych i w nim można zdefiniować np. że formularz
+          nie składa się tylko ze słów, ale też np. plików. Jeśli chcemy gdzieś
+          wysłać nasz formularz, należy po znaczniku form w html wpisać action.
+        </p>
+      </section>
+      <section class="notes">
+        <h2 class="notes__title">Walidacja danych</h2>
+        <p class="notes__description">
+          Jeśli w którymś z inputów dopiszemy wartość required, oznacza to, że
+          nie będzie można wysłać formularza, dopóki ta wartość nie zostanie w
+          nim (poprawnie) uzupełniona. Walidacja we frontendzie i backendzie nie
+          są tożsame. Pattern pozwala na użycie ciągów znaków w wyrażeniach
+          regularnych. Można np. sprawdzić sposób zapisu kodu pocztowego dla
+          danego kraju
+          <a href="http://html5pattern.com/Names"
+            >Kody i nazwy.</a> Pattern dodajemy przy inpucie, przykładowy pattern
+            dla kodu pocztowego w Polsce to [0-9]{2}-[0-9]{3}. Liczby w
+            nawiasach oznaczają ilość liczb przed i po myślniku, a 0-9 wskazuje
+            na zakres cyfr, które możemy wpisać.
+          
         </p>
       </section>
     </main>

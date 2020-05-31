@@ -12,14 +12,22 @@
         <a class="navigation-flex__link--homepage" href="/index.html"
           >Strona główna</a
         >
-        <a class="navigation-flex__link" href="/html//nauka-html.html">Nauka html</a>
-        <a class="navigation-flex__link" href="/html/nauka-style.html">Nauka style</a>
+        <a class="navigation-flex__link" href="/html//nauka-html.html"
+          >Nauka html</a
+        >
+        <a class="navigation-flex__link" href="/html/nauka-style.html"
+          >Nauka style</a
+        >
         <a class="navigation-flex__link" href="/html/nauka-javascript.html"
           >Nauka JavaScript</a
         >
-        <a class="navigation-flex__link" href="/html/moje-hobby.html">Moje hobby</a>
+        <a class="navigation-flex__link" href="/html/moje-hobby.html"
+          >Moje hobby</a
+        >
         <a class="navigation-flex__link" href="/html/flexbox.html">Flexbox</a>
-        <a class="navigation-flex__link" href="/html/background.html">Background</a>
+        <a class="navigation-flex__link" href="/html/background.html"
+          >Background</a
+        >
       </nav>
     </header>
     <main class="main">
@@ -301,8 +309,10 @@
           <li class="frame__important">
             background:color
           </li>
+          <li class="frame__important">
           background:size - pozwala np. użyć opcji contain, czyli tło zmieści
           się tam, gdzie jest treść
+        </li>
         </ul>
       </section>
       <article class="frame">
@@ -315,10 +325,61 @@
           przezroczyste musimy w wartości background:color wybrać rgb(a), gdzie
           rgb oznacza red green blue, natomiast "a" pozwala zdefiniować stopień
           przezroczystości, np. rgba (255,225,255,0.5), gdzie ostatnia wartość
-          to alpha. Gradienty możemy przetestować np. na stronie <a href ="https://cssgradient.io/">CSS Gradient</a>
+          to alpha. Gradienty możemy przetestować np. na stronie
+          <a href="https://cssgradient.io/">CSS Gradient</a>
         </p>
       </article>
 
+      <article class="frame">
+        <h3 class="frame__title">Grid</h3>
+        <p class="frame__description">
+          W poprzednich lekcjach poznaliśmy box i flexbox, do czego służy więc
+          grid? Pozwala on na budowanie całego layoutu strony, podczas, gdy
+          flexbox pozwala na opakowywanie raczej konkretnych, mniejszych
+          elementów. Grid składa się przede wszystkim z
+          <strong class="frame__important"
+            >header, article, aside i footer.</strong
+          >. Aside jest mniej ważne niż article i może posłużyć do dodania
+          niejako "bocznej" notatki czy umiesczenia menu. Sam grid posiada grid
+          track (row lub column), grid line i grid cell oraz grid area. Grid
+          służy do tworzenia regularnych kształtów na bazie prostokąta. Nie jest
+          możliwe utworzenie klocków jak w tetrisie.
+        </p>
+        <h3 class="frame__title">Jednostka fr</h3>
+        <p class="frame__description">
+          Jednostka fr działa niejako jak ułamek - wykorzystuje dostępną
+          przestrzeń i dzieli ją w zależności ile kolumn chcemy dodać. Może
+          występować razem z px lub %. Przykładowy zapis dla 3 kolumn to
+          grid-template-columns: 100px 1fr 2fr. Będzie to oznaczać tyle, że po
+          wykorzystaniu 100px na pierwszą kolumnę, fr wykorzysta pozostałą
+          przestrzeń i szerokość drugiej kolumny ustawi na 200% trzeciej
+          kolumny. Funkcja css-owa repeat (ileRazy, wartość) pozwala na
+          zdefiniowanie ile chcemy utworzyć kolumn i o jakiej szerokości, o ile
+          mają być jednakowe. Wartość column-gap lub row-gap pozwala nam na
+          "odklejenie"od siebie poszczególnuch kolumn i rzędów. Funkcja minmax
+          pozwala na zdefiniowanie ile minimalnej i maksymalnej szerokości może
+          mieć dana komórka, gdy ta wartość po zmniejszeniu okienka beędzie zbyt
+          mała, włączy się scroll.
+        </p>
+      </article>
+      <section class="notes">
+        <h2 class="notes__title">Grid layout przykłady</h2>
+        <p class="notes__description">Grid header </p>
+          <img src="/img/grid-header.png" alt="grid-header">
+      
+        <p class="notes__description">Grid-article</p>
+        <img src="/img/grid-article.png" alt="grid-article">
+     
+      <p class="notes__description">Grid-footer</p>
+      <img src="/img/grid-footer.png" alt="grid-footer">
+  
+    <p class="notes__description">Grid-empty</p>
+    <img src="/img/grid-empty.png" alt="grid-empty">
+  
+  
+    
+
+      </section>
     </main>
     <footer>
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.
