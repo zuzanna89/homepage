@@ -238,16 +238,103 @@
         </table>
       </section>
       <section class="notes">
-        <h3 class="notes__title">Formularze</h3>
+        <h2 class="notes__title">Formularze</h2>
         <p class="notes__description">
           Formularze służą do komunikacji ze światem zewnętrznym (na obcym
           serwerze lub na naszej stronie). Podstawowy znacznik to
           <b>&lt;form&gt;</b>. <b>Label</b> określa jakiego rodzaju danej
-          szukamy i znajduje się poza polem, w którym wpisujemy daną.
-          Placeholder podpowiada jaką informację należy wpisać lub można podać
-          tam przykład. Użycie <b>value</b> powoduje, że dana wartość jest
-          domyślnie wypełniona w formularzu. <b>Id</b>wskazuje, jakiego rodzaju
-          daną wprowadzamy do formularza.
+          szukamy i znajduje się poza polem, w którym wpisujemy daną
+          (<b>input</b>). Placeholder podpowiada jaką informację należy wpisać
+          lub można podać tam przykład. Użycie <b>value</b> powoduje, że dana
+          wartość jest domyślnie wypełniona w formularzu. <b>Id </b>wskazuje,
+          jakiego rodzaju daną wprowadzamy do formularza.
+        </p>
+        <ul>
+          <li>
+            &lt;label&gt;to napis (etykieta)która wskazuje jakiej danej
+            oczekujemy, podobnie jak header, stanowi swego rodzaju nagłówek
+          </li>
+          <li>
+            &lt;fieldset&gt; pozwala zgrupować grupę pól w jeden box (np. adres)
+          </li>
+          <li>
+            &lt;legend&gt; określa typ danych jakie będą znajdować się w naszym
+            boksie i jest zapisywana u góry
+          </li>
+          <li>
+            type=radio button - standardowy przycisk wyboru z kropką, dobrze
+            zgrupować warianty wyboru w fieldset
+          </li>
+          <li>
+            &lt;checkbox&gt; - może być wykorzystywany nie tylko jako pole
+            wyboru, ale też jako np. zaznaczenie zgody
+          </li>
+          <li>
+            type=range pozwala na określenie rzędu wielkości, należy ustawić
+            minimum i maximum oraz step jako odstępy (wartości); na formularzu
+            nie widać jaka wartość jest zaznaczona, więc należy uruchomoć w
+            konsoli polecenie, które pozwoli ją podejrzeć;
+          </li>
+          <li>
+            type=password pozwala na wpisanie hasła, dzięki czemu wartości są
+            standardowo wykropkowane
+          </li>
+
+          <li>
+            type=number pozwala określić, że możemy wpisać jedynie liczby i
+            dodaje nam strzałki pozwalające na zmianę numeru +/-1
+          </li>
+          <li>
+            type=tel pozwala wpisać numer telefonu, jednak nie istnieje
+            standardowy format, więc pozwala na dopisanie liter
+          </li>
+          <li>
+            &lt;select&gt;pozwala na wybranie jednej opcji i tworzy listę
+            rozwijaną
+          </li>
+          <li>
+            &lt;textarea&gt;pozwala na utworzenie pola z tekstem do wpisania, z
+            defaultu może być "rozciągany przez użytkownika"
+          </li>
+          <li>
+            type=submit pozwala na utworzenie przycisku, który wysyła formularz
+          </li>
+        </ul>
+        <p>Formularz type=text;
+        <img src="/img/forms.png" alt="forms">
+      </p>
+      <p>Fieldset - grupowanie typu danych
+        <img src="/img/forms-fieldset.png" alt="fieldset"></p>
+        <p>Formularz fieldset type:radio
+          <img src="/img/forms-radio.png" alt="radio">
+        </p>
+        <p>Formularz type:checkbox
+          <img src="/img/forms-checkbox.png" alt="checkbox"></p>
+        </p>
+        <p>Formularze typów:tel, number, email, range 
+          <img src="/img/forms-tel,number,email,range.png" alt="types">
+        </p>
+        <p>Formularz typu:password
+          <br/>
+          <img src="/img/forms-password.png" alt="password">
+        </p>
+        <p>Formularz typu:file
+        <img src="/img/forms-file.png" alt="file">
+      </p>
+      <p>Formularz select
+        <img src="/img/forms-select.png" alt="select">
+      </p>
+      <p>Formularz textarea
+        <img src="/img/forms-textarea.png" alt="textarea">
+</p>
+<p>Formularz typu:submit
+  <img src="/img/forms-submit.png" alt="submit">
+</p>
+      </section>
+      <section class="notes">
+        <h2 class="notes__title">GET i POST</h2>
+        <p class="notes__description">
+          Dane z naszych wypełnionych formularzy chcemy gdzieś wysłać
         </p>
       </section>
     </main>
