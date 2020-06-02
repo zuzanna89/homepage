@@ -12,12 +12,26 @@ body {
 .main-heading {
   background: #a3e6de;
   color: #1d384b;
+  width:100%;
+  margin-top:50px;
+  
 }
 .main-heading__main-heading--js {
   background: #a3e6de;
   color: #fefefe;
+  display:block;
+  width:100%;
+  min-height:30px;
+  padding-top:20px;
 }
 
+.header{
+  background-color: #ff8a6c;
+  min-height:50px;
+  position:fixed;
+  width: 100%;
+  top:0;
+}
 .header-link {
   color: #57435a;
 }
@@ -32,6 +46,8 @@ article {
 #top {
   background: #a3e6de;
   color: #1d384b;
+  width:100%;
+  display:block;
 }
 
 a {
@@ -43,22 +59,27 @@ nav a {
 }
 
 .navigation {
-  background: #e1fefd;
-  padding: 12px;
-  border-radius: 5px;
+  padding: 16px;
+  display:none;
 }
 
 .navigation__link {
   color: #1a535c;
-  display: inline;
+  display: block;
   margin-right: 5px;
   margin-left: 5px;
+  margin-bottom: 10px;
 }
 
 .navigation__link--homepage {
   color: #ff6b6b;
+  display: block;
   margin-right: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
 }
+ 
+
 .navigation-flex {
   background-color:#4ecdc4;
   display: flex;
@@ -77,8 +98,12 @@ nav a {
 .navigation-flex__link--homepage {
   color:#1d384b;
   font-weight: bold;
-  font-size: 17px;
+  font-size: 17px;}
+  
+.navigation--open {
+  display: block;
 }
+
 .box {
   background: #ff7f7e;
   color: #fefffe;
@@ -95,7 +120,7 @@ nav a {
 .absolute {
   background: #8dc8d6;
   color: #176477;
-  width: 80px;
+  width:80px;
   height: 80px;
   padding: 40px;
   top: 60px;
@@ -124,14 +149,20 @@ nav a {
 
 .main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin:50px 0 0 0;
+  width:100%;
 }
 
 .about__heading {
   color: #1d384b;
+  width:100%;
 }
 .about__description {
   color: #1d384b;
+}
+.about__picture {
+  display:block;
+  max-width:100%;
 }
 .frame {
   background: #fefffe;
@@ -215,5 +246,24 @@ nav a {
   font-weight: bold;
   align-items: stretch;
   text-align: center;
-  
+}
+
+.hamburger{
+  position: absolute;
+  top:16px;
+  right:25px;
+}
+@media (min-width:768px) {
+  .hamburger {
+    display:none;
+  }
+  .navigation {
+    background: #e1fefd;
+    padding: 12px;
+    border-radius: 5px;
+    justify-content: space-around;
+    display:flex;
+    align-items: center;
+    
+  }
 }

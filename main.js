@@ -10,12 +10,6 @@ console.log(`Witaj, nazywam się ${name} i mam ${age} lat`);
 
 console.log(newName);
 
-const heading = document.querySelector ('.main-heading__main-heading--js')
-
-heading.innerHTML = `Tu powinna być strona główna, ale napisałam ją w JS`
-
-console.log(heading.innerHTML);
-
 const emptyParagraph = document.querySelector ('.notes__notes--js')
 
 emptyParagraph.innerHTML = `Alleluja, udało mi się wpisać tekst w JavaScript. 
@@ -134,3 +128,20 @@ break;
 default: 
 console.log('jestem czymś innym');
 }
+const button = document.querySelector ('.action--js');
+
+console.log(button)
+
+    const myClick = () => {
+        const heading = document.querySelector(".main-heading__main-heading--js");
+        heading.innerHTML = 'Witaj maluszku, w końcu Ci się udało';
+    }
+
+button.addEventListener ('click', myClick);
+
+const hamburger = document.querySelector ('.hamburger--js');
+
+hamburger.addEventListener('click',() => {
+const nav = document.querySelector ('.navigation--js');
+nav.classList.toggle ('navigation--open');
+})

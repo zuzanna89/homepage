@@ -8,9 +8,9 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <header>
-      <nav class="navigation">
-        <a class="navigation__link--homepage" href="index.html"
+    <header class="header">
+      <nav class="navigation navigation--js navigation--open">
+        <a class="navigation__link navigation__link--homepage" href="index.html"
           >Strona główna</a
         >
         <a class="navigation__link" href="html/nauka-html.html">Nauka html</a>
@@ -22,11 +22,13 @@
         <a class="navigation__link" href="html/flexbox.html">Flexbox</a>
         <a class="navigation__link" href="html/background.html">Background</a>
       </nav>
+      <button class="hamburger hamburger--js" aria-label = "Otwórz menu">Menu</button>
     </header>
     <div class="absolute">Latający spodek</div>
     <main class="main">
       <header id="top">
         <h1 class="main-heading__main-heading--js">Strona główna Zuzanna</h1>
+        <button class="action--js">Zmień nagłówek</button>
       </header>
       <h2 class="about__heading">O mnie</h2>
       <img class="about__picture" src="img/zuza.jpg" alt="Uśmiechnięta Zuza"/>
