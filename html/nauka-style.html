@@ -310,9 +310,9 @@
             background:color
           </li>
           <li class="frame__important">
-          background:size - pozwala np. użyć opcji contain, czyli tło zmieści
-          się tam, gdzie jest treść
-        </li>
+            background:size - pozwala np. użyć opcji contain, czyli tło zmieści
+            się tam, gdzie jest treść
+          </li>
         </ul>
       </section>
       <article class="frame">
@@ -364,21 +364,50 @@
       </article>
       <section class="notes">
         <h2 class="notes__title">Grid layout przykłady</h2>
-        <p class="notes__description">Grid header </p>
-          <img src="/img/grid-header.png" alt="grid-header">
-      
-        <p class="notes__description">Grid-article</p>
-        <img src="/img/grid-article.png" alt="grid-article">
-     
-      <p class="notes__description">Grid-footer</p>
-      <img src="/img/grid-footer.png" alt="grid-footer">
-  
-    <p class="notes__description">Grid-empty</p>
-    <img src="/img/grid-empty.png" alt="grid-empty">
-  
-  
-    
+        <p class="notes__description">Grid header</p>
+        <img src="/img/grid-header.png" alt="grid-header" />
 
+        <p class="notes__description">Grid-article</p>
+        <img src="/img/grid-article.png" alt="grid-article" />
+
+        <p class="notes__description">Grid-footer</p>
+        <img src="/img/grid-footer.png" alt="grid-footer" />
+
+        <p class="notes__description">Grid-empty</p>
+        <img src="/img/grid-empty.png" alt="grid-empty" />
+      </section>
+      <article class="frame">
+        <h3 class="frame__title">Media query & mobile first</h3>
+        <p class="frame__description">
+          Media query wiąże się ze sposobem wyświetlania treści na różnych
+          typach urządzeń. Zgodnie z tą zasadą, wersja mobile powinna być brana
+          pod uwagę jako pierwsza. Google Chrome posiada przydatne narzędzie w
+          developer tools, które pozwala podejrzeć widok dla poszczególnych
+          typów urządzeń.
+          <img src="/img/responsiveness.png" alt="responsiveness" />
+          <br />
+          RWD oznacza responsive web design. Jeśli chcemy dostosować widok
+          wyświetlenia na poszczególnych ekranach, należy w css zdefiniować
+          @media, a w html wystarczy użyć span i klasy mobile.
+        </p>
+      </article>
+      <section class="notes">
+        <h3 class="notes__title">
+          Przykład działania mobile query na różnych urządzeniach (z
+          uwzględnieniem grid)
+        </h3>
+        <p>
+          Brak media query, widok body mobile
+          <img src="/img/media-mobile.png" alt="media-mobile" />
+        </p>
+        <p>
+          Media query, widok tablet (od 768px)
+          <img src="/img/media-tablet.png" alt="media-tablet" />
+        </p>
+        <p>
+          Media query, widok laptop (od 1024px)
+          <img src="/img/media-laptop.png" alt="media-laptop" />
+        </p>
       </section>
     </main>
     <footer>
