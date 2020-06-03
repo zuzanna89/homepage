@@ -139,7 +139,11 @@ console.log(button)
 
 button.addEventListener ('click', myClick);
 
+
+
 const hamburger = document.querySelector ('.hamburger--js');
+
+console.log(button)
 
 hamburger.addEventListener('click',() => {
 const nav = document.querySelector ('.navigation--js');

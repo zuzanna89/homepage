@@ -9,11 +9,15 @@
   <body>
     <header>
       <nav class="navigation navigation--js navigation--open">
-        <a class="navigation__link navigation__link--homepage" href="/index.html"
+        <a
+          class="navigation__link navigation__link--homepage"
+          href="/index.html"
           >Strona główna</a
         >
         <a class="navigation__link" href="/html/nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="/html/nauka-style.html">Nauka style</a>
+        <a class="navigation__link" href="/html/nauka-style.html"
+          >Nauka style</a
+        >
         <a class="navigation__link" href="/html/nauka-javascript.html"
           >Nauka JavaScript</a
         >
@@ -21,7 +25,9 @@
         <a class="navigation__link" href="/html/flexbox.html">Flexbox</a>
         <a class="navigation__link" href="/html/background.html">Background</a>
       </nav>
-      <button class="hamburger hamburger--js" aria-label = "Otwórz menu">Menu</button>
+      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+        Menu
+      </button>
     </header>
     <main class="main">
       <header id="top">
@@ -291,9 +297,75 @@
             (fałsz), można dodać kilka else, wtedy kod będzie szukał prawdy i
             pokaże pierwszy wynik, który jest prawdziwy.
           </li>
-          <li>SWITCH - switch, case 1:, break; case:2: break; default: </li>
+          <li>
+            SWITCH - switch, case 1:, break; case:2: break; default:, switch
+            pozwala na wpisanie kilku przypadków i posiada opcję default, która
+            definiuje jakie jest domyślne wyrażenie.
+          </li>
         </ul>
+        <img src="/img/js-switch.png" alt="js-switch" />
       </section>
+      <article class="frame">
+        <h3 class="frame__title">Eventy</h3>
+        <p class="frame__description"></p>
+        Jak wiemy, programowanie polega na tłumaczeniu języka naturalnego na
+        język zrozumiały przez komputer. Od JS oczekujemy, że zamieni słowa na
+        czyny:) Button to znacznik w html-u, który w przeciwieństwie do
+        &lt;a&gt;, który odsyła nas w jakieś miejsce, button połączony z js
+        pozwala na interakcje na stronie. Może też być wykorzystany zamiast
+        input i submit do przesyłania formularzy. Pozwoli nam także na
+        rozwinięcie menu np. podczas tworzenia menu typu hamburger. Za pomocą
+        event w js możemy wykonać jakąś akcję. Częste są np. akcje mouseEvent
+        (np. click) z funkcją addEventlistener, które wykonują jakieś zadanie po
+        kliknięciu myszką, np. zamiana tekstu nagłówka po kliknięciu myszką czy
+        rozwinięcie hamburger menu. W poniższym przykładzie hamburger menu
+        zgodnie z ustawieniami media query jest widoczny jedynie na urządzeniach
+        mobilnych. Funkcja toggle pozwala na zwinięcie lub rozwinięcie menu i
+        jest to zdefiniowane również w html.
+        <strong class="frame__important"
+          ><a
+            href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events"
+            >Przykłady eventów</a
+          ></strong
+        >
+        <p>
+          Widok click w html
+          <br />
+          <img src="/img/click-html.png" alt="click-html" />
+        </p>
+        <p>
+          Widok click w js
+          <br />
+          <img src="/img/click-js.png" alt="click-html" />
+        </p>
+        <p>
+          Widok na stronie
+          <br />
+          <img src="/img/click-before.png" alt="click-before" />
+          <img src="/img/click-after.png" alt="click-after" />
+        </p>
+        <p>
+          Hamburger menu w js<br />
+          <img src="/img/click-hamburger-js.png" alt="click-hamburger-js" />
+        </p>
+        <p>
+          Hamburger menu w html
+          <br />
+          <img src="/img/html-hamburger.png" alt="html-hamburger" />
+          <br />
+          <img src="/img/hamburger-navigation.png" alt="hamburger-navigation" />
+        </p>
+        <p>
+          Hamburger menu closed
+          <br />
+          <img src="/img/hamburger-menu-close.png" alt="hamburger-menu-close" />
+        </p>
+        <p>
+          Hamburger menu open
+          <br />
+          <img src="/img/hamburger-menu-open.png" alt="hamburger-menu-open" />
+        </p>
+      </article>
     </main>
     <footer>
       Dziękuję za uwagę, wszystkie prawa zastrzeżone.
