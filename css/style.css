@@ -279,12 +279,34 @@ nav a {
   grid-template-areas: "section section";
   grid-template-columns:1fr 1fr;
   column-gap:10px;
-  align-items:center;
 }
 @media (max-width:767px) {
 .grid 
 {display:flex;
-  flex-wrap: wrap;
+flex-wrap:wrap;
 
 }
 }
+.notes__description__pseudo::before{
+    content:"";
+    display:inline-block;
+    height:10px;
+    width:10px;
+    background-color: #ff8a88;
+    border-radius:50%;
+  }
+
+  .notes__description__pseudo::after{
+    content:"";
+    display:inline-block;
+    height:10px;
+    width:10px;
+    background-color: #ff8a88;
+    border-radius:50%;}
+
+    .navigation-flex__link:hover{
+      color:yellow;
+    }
+    .navigation-flex__link:focus{
+      border:2px solid tomato;
+    }
