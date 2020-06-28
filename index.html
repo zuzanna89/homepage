@@ -1,290 +1,272 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="css/normalize-css.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="navigation navigation--js navigation--open">
-        <a class="navigation__link navigation__link--homepage" href="index.html"
-          >Strona główna</a
-        >
-        <a class="navigation__link" href="html/nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="html/nauka-style.html">Nauka style</a>
-        <a class="navigation__link" href="html/nauka-javascript.html"
-          >Nauka JavaScript</a
-        >
-        <a class="navigation__link" href="html/moje-hobby.html">Moje hobby</a>
-        <a class="navigation__link" href="html/flexbox.html">Flexbox</a>
-        <a class="navigation__link" href="html/background.html">Background</a>
-      </nav>
-      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
-        Menu
-      </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="css/normalize-css.css" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation navigation--js navigation--open">
+      <a class="navigation__link navigation__link--homepage" href="index.html">Strona główna</a>
+      <a class="navigation__link" href="html/nauka-html.html">Nauka html</a>
+      <a class="navigation__link" href="html/nauka-style.html">Nauka style</a>
+      <a class="navigation__link" href="html/nauka-javascript.html">Nauka JavaScript</a>
+      <a class="navigation__link" href="html/moje-hobby.html">Moje hobby</a>
+      <a class="navigation__link" href="html/flexbox.html">Flexbox</a>
+      <a class="navigation__link" href="html/background.html">Background</a>
+    </nav>
+    <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+      Menu
+    </button>
+  </header>
+  <div class="absolute">Latający spodek</div>
+  <main class="main">
+    <header id="top">
+      <h1 class="main-heading__main-heading--js">Strona główna Zuzanna</h1>
+      <button class="action--js">Zmień nagłówek</button>
     </header>
-    <div class="absolute">Latający spodek</div>
-    <main class="main">
-      <header id="top">
-        <h1 class="main-heading__main-heading--js">Strona główna Zuzanna</h1>
-        <button class="action--js">Zmień nagłówek</button>
-      </header>
-      <h2 class="about__heading">O mnie</h2>
-      <img class="about__picture" src="img/zuza.jpg" alt="Uśmiechnięta Zuza" />
-      <p class="about__description">
-        Pracuję w firmie IT, w której większość deweloperów zajmuje się
-        <b><i>frontendem</i></b
-        >. Postanowiłam ukończyć ten kurs, aby poznać lepiej ich pracę i
-        zrozumieć czym zajmują się na co dzień i z jakimi problemami się
-        stykają. Być może, jeśli będzie mi dobrze szło, rozważę ukończenie
-        również innych kursów. Na czym polega html? Kliknij link, aby przejść do
-        do notatek o html. <a href="pages/nauka-html.html">Nauka html</a>
-        Jeśli chcesz dowiedzieć się więcej, sprawdź to sam/a na stronie
-        <a href="https://cotenfrontend.pl">WTF</a>.
-        <strong> To jest moja pierwsza strona html.</strong>
+    <h2 class="about__heading">O mnie</h2>
+    <img class="about__picture" src="img/zuza.jpg" alt="Uśmiechnięta Zuza" />
+    <p class="about__description">
+      Pracuję w firmie IT, w której większość deweloperów zajmuje się
+      <b><i>frontendem</i></b>. Postanowiłam ukończyć ten kurs, aby poznać lepiej ich pracę i
+      zrozumieć czym zajmują się na co dzień i z jakimi problemami się
+      stykają. Być może, jeśli będzie mi dobrze szło, rozważę ukończenie
+      również innych kursów. Na czym polega html? Kliknij link, aby przejść do
+      do notatek o html. <a href="pages/nauka-html.html">Nauka html</a>
+      Jeśli chcesz dowiedzieć się więcej, sprawdź to sam/a na stronie
+      <a href="https://cotenfrontend.pl">WTF</a>.
+      <strong> To jest moja pierwsza strona html.</strong>
+    </p>
+    <div class="box">
+      Poznaj moje hobby
+      <div class="absolute-second">Sticky</div>
+    </div>
+
+    <section id="Notatki">
+      <h2 class="notes__title">Notatki</h2>
+      <p class="notes__desciption">
+        Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
+        czego się nauczyłam. W ramkach umieszczę ciekawe przykłady
+        zastosowania lub definicje, które sprawiają mi największy problem.
       </p>
-      <div class="box">
-        Poznaj moje hobby
-        <div class="absolute-second">Sticky</div>
-      </div>
+      <p class="notes__notes--js"></p>
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">
+        Sposób zapisu, czyli opowieść o wielbłądzie, kebabie, wężu i Pascalu
+      </h3>
+      <p class="frame__description">
+        W naszym kursie możemy posługiwać się różnego rodzaju zapisami, jeśli
+        chcemy użyć kilku słów jednocześnie. Pierwszym z nich jest camelCase,
+        który jak widać pierwsze słowo ma pisane z małej, a drugie (i kolejne)
+        z wielkiej litery. Drugim przykładem jest kebab-case, w którym słowa
+        oddzielamy myślnikiem niczym elementy szaszłyka patyczkiem lub
+        szpikulcem. Kolejny sposób zapisu to snake, czyli wąż, w którym
+        kolejne słowa pisane są małą literą i oddzielone podkreślnikami.
+        Ostatni sposób zapisu to Pascal, gdzie wzszystkie słowa są pisane
+        wielką literą bez spacji.
 
-      <section id="Notatki">
-        <h2 class="notes__title">Notatki</h2>
-        <p class="notes__desciption">
-          Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
-          czego się nauczyłam. W ramkach umieszczę ciekawe przykłady
-          zastosowania lub definicje, które sprawiają mi największy problem.
-        </p>
-        <p class="notes__notes--js"></p>
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">
-          Sposób zapisu, czyli opowieść o wielbłądzie, kebabie, wężu i Pascalu
-        </h3>
-        <p class="frame__description">
-          W naszym kursie możemy posługiwać się różnego rodzaju zapisami, jeśli
-          chcemy użyć kilku słów jednocześnie. Pierwszym z nich jest camelCase,
-          który jak widać pierwsze słowo ma pisane z małej, a drugie (i kolejne)
-          z wielkiej litery. Drugim przykładem jest kebab-case, w którym słowa
-          oddzielamy myślnikiem niczym elementy szaszłyka patyczkiem lub
-          szpikulcem. Kolejny sposób zapisu to snake, czyli wąż, w którym
-          kolejne słowa pisane są małą literą i oddzielone podkreślnikami.
-          Ostatni sposób zapisu to Pascal, gdzie wzszystkie słowa są pisane
-          wielką literą bez spacji.
-
-          <br />
-          <br />
-          mySuperBoldHeader to <b>camelCase</b>
-          <br />
-          my-super-bold-header to <b>kebab-case</b>
-          <br />
-          my_super_blod_header to <b>snake_case</b>
-          <br />
-          MySuperBoldHeader to <b>PascalCase.</b>
-        </p>
-      </article>
-      <section class="notes">
-        <h2 class="notes__title">
-          Do zapamiętania z pierwszej lekcji - opowieść o sąsiadach
-        </h2>
-        <p class="notes__desciption">
-          Warstwy we frontendzie można porównać do <i>sąsiadów</i> mieszkających
-          na różnych piętrach domu. Zaczynamy od treści (tekstu), który znajduje
-          się na parterze. Nad nim znajduje się html, za pomocą którego
-          przenosimy tekst czy treść na stronę. Nad nim znajduje się css, który
-          może wpłynąć na to jak html będzie wyglądał, np. jakiej czcionki
-          użyjemy i jakiego będzie koloru. Nad nim znajduje się javascript,
-          która może wpływać na wszystkich sąsiadów zalewając ich mieszkanie
-          wodą. JS służy do wydawawania poleceń i zamieniania treści na
-          działania.
-        </p>
-      </section>
-
-      <article class="frame">
-        <h3 class="frame__title">
-          Życie w terminalu
-        </h3>
-        <p class="frame__description">
-          Terminal, czyli tzw. <i> <b>czarne okienko </b> </i> jest uruchamiany
-          przez kliknięcie command+spacji i wybranie spotlight (na macu).
-          <br />W Visual Studio należy wybrać
-          <b>comm+shift+p i shell command in PATH.</b> <br />Podstawowe komendy
-          w terminalu to cd, które przenosi nas do odpowiedniego katalogu np.
-          <b>cd dev/ homepage.</b> <br /><b
-            >ls enter pokazuje rzeczy z katalogu domowego <br />ls-l pokazuje
-            listę wszystkie rzeczy <br />cd spacja.. (cd ..) pozwala na powrót
-            do katalogu wyżej, a cd ../ .. o dwa katalogi wyżej <br />mkdir
-            pozwala na stworzenie nowego katalogu <br />pwd pozwala pokazać całą
-            ścieżkę <br />code . uruchamia visual studio code w katalogu
-            homepage.
-          </b>
-        </p>
-      </article>
-
-      <article class="frame">
-        <h3 class="frame__title">
-          Nad ranem znaleźli młodego GIT-owca
-        </h3>
-        <p class="frame__description">
-          <b>GIT otwierany jest w okienku terminala. </b>
-          <br />GIT jest systemem kontroli wersji, który jest pomocny, gdy np.
-          skasowaliśmy przypadkowo plik, chcemy dokonać zmian, przywrócić
-          wcześniejszą wersję lub chcemy pracować nad projektem grupowym.
-          <br />Na dysku mamy jedynie aktualną wersję kodu. <br /><b
-            >Podstawowe komendy: <br />git version - wersja git <br />git config
-            --global user.name "" oraz git config --global user.email pozwalają
-            ustawić konfigurację. <br />git config --get user.name i git config
-            --get user.email pozwalają sprawdzić, czy nazwy podane w
-            konfiguracji. <br />commit (commit -m "") pozwala zapisać zmiany,
-            które mają być "zacommitowane" <br />git status pozwala sprawdzić
-            aktualny stan plików i podejrzeć, co można zapisać <br />git init
-            pozwala utworzyć nowy katalog (repozytorium) <br />podstawowy flow
-            prac z gitem to git status git add. git commit -m"" git push.
-            <br />Polecenie git push pozwala "przepchnąć" zmiany do GitHuba.
-          </b>
-        </p>
-      </article>
-      <section class="notes">
-        <h2 class="notes__title">U mnie nie działa - debugging</h2>
-        <p class="notes__desciption">
-          Nazwa pochodzi od odpluskwiania mieszkań, ponieważ pluskwy sprawiały,
-          że nie działał prąd. Możesz przetestować poniższe kroki, by naprawić
-          kod:
-        </p>
-
-        <ol>
-          <li>
-            sprawdź, czy plik jest zapisany
-          </li>
-          <li>
-            sprawdź, czy edytujesz prawidłowy plik :)
-          </li>
-          <li>
-            sprawdź, czy odświeżyłaś/ eś przeglądarkę - na Macu cmd+shift+r, na
-            Windowsie i Linuksie - ctrl+F5.
-          </li>
-          <li>
-            sprawdź, czy nie masz błędów w edytorze kodu (w edytorze i w
-            validatorze) i dev tools (console)
-          </li>
-          <li>
-            możemy się odwoływać do złego źródła, np. zmieniliśmy nazwę linku w
-            edytorze lub zrobiliśmy literówkę w nazwie obrazka
-          </li>
-          <li>
-            czytaj ze zrozumieniem podpowiedzi błędów w terminalu,
-            <b
-              ><a href="https://validator.w3.org/nu/#textarea"
-                >validatorze</a
-              ></b
-            >, w problems w edytorze itp.
-          </li>
-          <li>
-            sprawdź to w Google i przetestuj, ważne, by szukać w miarę
-            aktualnych artykułów (nie warto sprawdzać w3schools, NIE jest to
-            oficjalna strona W3), lepiej skorzystać ze strony
-            <b><a href="https://stackoverflow.com/">Stack overflow</a></b>
-          </li>
-        </ol>
-        <br />
-
-        Wchodząc w dev tools w część network można też u góry kliknąć opcję
-        "disable cache", aby pliki pobierały się z właściwych miejsc
         <br />
         <br />
-        <img src="img/cache.png" alt="Disabling cache" /> <br />
-        <b>
-          <br />
-          Life hack - jeśli nie działa opcja "upiększania" kodu shift+option+f
-          na Macu w edytorze, to znaczy, że jest jakiś błąd, najczęściej w
-          znacznikach (np. niezamknięty nawias)</b
-        >
+        mySuperBoldHeader to <b>camelCase</b>
         <br />
+        my-super-bold-header to <b>kebab-case</b>
         <br />
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Inne przydatne linki</h3>
+        my_super_blod_header to <b>snake_case</b>
+        <br />
+        MySuperBoldHeader to <b>PascalCase.</b>
+      </p>
+    </article>
+    <section class="notes">
+      <h2 class="notes__title">
+        Do zapamiętania z pierwszej lekcji - opowieść o sąsiadach
+      </h2>
+      <p class="notes__desciption">
+        Warstwy we frontendzie można porównać do <i>sąsiadów</i> mieszkających
+        na różnych piętrach domu. Zaczynamy od treści (tekstu), który znajduje
+        się na parterze. Nad nim znajduje się html, za pomocą którego
+        przenosimy tekst czy treść na stronę. Nad nim znajduje się css, który
+        może wpłynąć na to jak html będzie wyglądał, np. jakiej czcionki
+        użyjemy i jakiego będzie koloru. Nad nim znajduje się javascript,
+        która może wpływać na wszystkich sąsiadów zalewając ich mieszkanie
+        wodą. JS służy do wydawawania poleceń i zamieniania treści na
+        działania.
+      </p>
+    </section>
 
-        <ul>
-          <li>
-            <a href="https://code.visualstudio.com/docs"
-              >Strona narzędzia Visual Code</a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/search?q=facebook%2Freact&type=Issues"
-              >Issues w GitHubie</a
-            >
-          </li>
-          <li>
-            <a href="https://developer.mozilla.org/pl/"
-              >Developer Mozilla (eng/pl)</a
-            >
-          </li>
+    <article class="frame">
+      <h3 class="frame__title">
+        Życie w terminalu
+      </h3>
+      <p class="frame__description">
+        Terminal, czyli tzw. <i> <b>czarne okienko </b> </i> jest uruchamiany
+        przez kliknięcie command+spacji i wybranie spotlight (na macu).
+        <br />W Visual Studio należy wybrać
+        <b>comm+shift+p i shell command in PATH.</b> <br />Podstawowe komendy
+        w terminalu to cd, które przenosi nas do odpowiedniego katalogu np.
+        <b>cd dev/ homepage.</b> <br /><b>ls enter pokazuje rzeczy z katalogu domowego <br />ls-l pokazuje
+          listę wszystkie rzeczy <br />cd spacja.. (cd ..) pozwala na powrót
+          do katalogu wyżej, a cd ../ .. o dwa katalogi wyżej <br />mkdir
+          pozwala na stworzenie nowego katalogu <br />pwd pozwala pokazać całą
+          ścieżkę <br />code . uruchamia visual studio code w katalogu
+          homepage.
+        </b>
+      </p>
+    </article>
 
-          <li>
-            <a href="https://devdocs.io/"
-              >DevDocs-dokumentacja większości technologii</a
-            >
-          </li>
-          <li>
-            <a href="https://caniuse.com/">Can I use</a>
-          </li>
-          <li>
-            <a href="https://css-tricks.com/almanac/">CSS almanach</a>
-          </li>
-          <li>
-            <a href="https://www.w3.org/TR/html52/">W3 org o html</a>
-          </li>
-          <li>
-            <a href="https://www.w3.org/TR/CSS/">W3 org o css</a>
-          </li>
-          <li>
-            <a href="https://crossweb.pl/wydarzenia/warszawa/"
-              >Wydarzenia IT w Warszawie</a
-            >
-          </li>
-        </ul>
-      </article>
-      <article class="frame">
-        <h3 class="frame__title">Gitignore</h3>
-        <p>
-          Gitignore pozwala "ominąć" lub pominąć pliki, które nie powinny być
-          widoczne dla GIT-a. Przykład stanowi np. plik zawierający hasła.
-          <br />
-          <img src="/img/gitignore.png" />Git ignore
-        </p>
-      </article>
-      <article class="frame">
-        <h3 class="frame__title">Node.js</h3>
-        <p>
-          Node.js służy do pisania backendu. Nie ma dostępu do DOM. Jest
-          wieloplatformowym oprogramowaniem o otwartym kodzie, które pozwala
-          deweloperom na tworzenie wszelkiego rodzaju oprogramowania w języku
-          JavaScript pracującym po stronie serwera. Jest to środowisko
-          uruchomieniowe, które działa poza przeglądarką, współpracujące
-          bezpośrednio z systemem operacyjnym. W ten sposób środowisko Node
-          udostępnia swoim aplikacjom API systemu operacyjnego, w tym dostęp do
-          systemu plików, bibliotek systemowych czy uruchomionych procesów, w
-          tym serwerów HTTP.
-        </p>
-      </article>
-      <article class="frame">
-        <h3 class="frame__title">NPM</h3>
-        <p>
-          Manager paczek do node (repozytorium), pozwala budować projekt
-          szybciej. <a href="https://yarnpkg.com/en/">Yarn</a> <a href="https://www.npmjs.com/">NPM</a>
-        </p>
-      </article>
-    </main>
+    <article class="frame">
+      <h3 class="frame__title">
+        Nad ranem znaleźli młodego GIT-owca
+      </h3>
+      <p class="frame__description">
+        <b>GIT otwierany jest w okienku terminala. </b>
+        <br />GIT jest systemem kontroli wersji, który jest pomocny, gdy np.
+        skasowaliśmy przypadkowo plik, chcemy dokonać zmian, przywrócić
+        wcześniejszą wersję lub chcemy pracować nad projektem grupowym.
+        <br />Na dysku mamy jedynie aktualną wersję kodu. <br /><b>Podstawowe komendy: <br />git version - wersja git
+          <br />git config
+          --global user.name "" oraz git config --global user.email pozwalają
+          ustawić konfigurację. <br />git config --get user.name i git config
+          --get user.email pozwalają sprawdzić, czy nazwy podane w
+          konfiguracji. <br />commit (commit -m "") pozwala zapisać zmiany,
+          które mają być "zacommitowane" <br />git status pozwala sprawdzić
+          aktualny stan plików i podejrzeć, co można zapisać <br />git init
+          pozwala utworzyć nowy katalog (repozytorium) <br />podstawowy flow
+          prac z gitem to git status git add. git commit -m"" git push.
+          <br />Polecenie git push pozwala "przepchnąć" zmiany do GitHuba.
+        </b>
+      </p>
+    </article>
+    <section class="notes">
+      <h2 class="notes__title">U mnie nie działa - debugging</h2>
+      <p class="notes__desciption">
+        Nazwa pochodzi od odpluskwiania mieszkań, ponieważ pluskwy sprawiały,
+        że nie działał prąd. Możesz przetestować poniższe kroki, by naprawić
+        kod:
+      </p>
 
-    <footer>
-      Dziękuję za uwagę, wszystkie prawa zastrzeżone.
-      <b> <a href="#top">Wróć na górę strony</a></b>
-    </footer>
-    <script src="main.js"></script>
-  </body>
+      <ol>
+        <li>
+          sprawdź, czy plik jest zapisany
+        </li>
+        <li>
+          sprawdź, czy edytujesz prawidłowy plik :)
+        </li>
+        <li>
+          sprawdź, czy odświeżyłaś/ eś przeglądarkę - na Macu cmd+shift+r, na
+          Windowsie i Linuksie - ctrl+F5.
+        </li>
+        <li>
+          sprawdź, czy nie masz błędów w edytorze kodu (w edytorze i w
+          validatorze) i dev tools (console)
+        </li>
+        <li>
+          możemy się odwoływać do złego źródła, np. zmieniliśmy nazwę linku w
+          edytorze lub zrobiliśmy literówkę w nazwie obrazka
+        </li>
+        <li>
+          czytaj ze zrozumieniem podpowiedzi błędów w terminalu,
+          <b><a href="https://validator.w3.org/nu/#textarea">validatorze</a></b>, w problems w edytorze itp.
+        </li>
+        <li>
+          sprawdź to w Google i przetestuj, ważne, by szukać w miarę
+          aktualnych artykułów (nie warto sprawdzać w3schools, NIE jest to
+          oficjalna strona W3), lepiej skorzystać ze strony
+          <b><a href="https://stackoverflow.com/">Stack overflow</a></b>
+        </li>
+      </ol>
+      <br />
+
+      Wchodząc w dev tools w część network można też u góry kliknąć opcję
+      "disable cache", aby pliki pobierały się z właściwych miejsc
+      <br />
+      <br />
+      <img src="img/cache.png" alt="Disabling cache" /> <br />
+      <b>
+        <br />
+        Life hack - jeśli nie działa opcja "upiększania" kodu shift+option+f
+        na Macu w edytorze, to znaczy, że jest jakiś błąd, najczęściej w
+        znacznikach (np. niezamknięty nawias)</b>
+      <br />
+      <br />
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Inne przydatne linki</h3>
+
+      <ul>
+        <li>
+          <a href="https://code.visualstudio.com/docs">Strona narzędzia Visual Code</a>
+        </li>
+        <li>
+          <a href="https://github.com/search?q=facebook%2Freact&type=Issues">Issues w GitHubie</a>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/pl/">Developer Mozilla (eng/pl)</a>
+        </li>
+
+        <li>
+          <a href="https://devdocs.io/">DevDocs-dokumentacja większości technologii</a>
+        </li>
+        <li>
+          <a href="https://caniuse.com/">Can I use</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/almanac/">CSS almanach</a>
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/html52/">W3 org o html</a>
+        </li>
+        <li>
+          <a href="https://www.w3.org/TR/CSS/">W3 org o css</a>
+        </li>
+        <li>
+          <a href="https://crossweb.pl/wydarzenia/warszawa/">Wydarzenia IT w Warszawie</a>
+        </li>
+      </ul>
+    </article>
+    <article class="frame">
+      <h3 class="frame__title">Gitignore</h3>
+      <p>
+        Gitignore pozwala "ominąć" lub pominąć pliki, które nie powinny być
+        widoczne dla GIT-a. Przykład stanowi np. plik zawierający hasła.
+        <br />
+        <img src="/img/gitignore.png" />Git ignore
+      </p>
+    </article>
+    <article class="frame">
+      <h3 class="frame__title">Node.js</h3>
+      <p>
+        Node.js służy do pisania backendu. Nie ma dostępu do DOM. Jest
+        wieloplatformowym oprogramowaniem o otwartym kodzie, które pozwala
+        deweloperom na tworzenie wszelkiego rodzaju oprogramowania w języku
+        JavaScript pracującym po stronie serwera. Jest to środowisko
+        uruchomieniowe, które działa poza przeglądarką, współpracujące
+        bezpośrednio z systemem operacyjnym. W ten sposób środowisko Node
+        udostępnia swoim aplikacjom API systemu operacyjnego, w tym dostęp do
+        systemu plików, bibliotek systemowych czy uruchomionych procesów, w
+        tym serwerów HTTP.
+      </p>
+    </article>
+    <article class="frame">
+      <h3 class="frame__title">NPM</h3>
+      <p>
+        Manager paczek do node (repozytorium), pozwala budować projekt
+        szybciej. <a href="https://yarnpkg.com/en/">Yarn</a> <a href="https://www.npmjs.com/">NPM</a>
+      </p>
+    </article>
+  </main>
+
+  <footer>
+    Dziękuję za uwagę, wszystkie prawa zastrzeżone.
+    <b> <a href="#top">Wróć na górę strony</a></b>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
 </html>
