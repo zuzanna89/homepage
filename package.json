@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "sass":"npx node-sass -w homepage/scss/style.scss homepage/style.css",
+    "sass": "npx node-sass -w homepage/scss/style.scss homepage/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "cow":"cowsay hello world!"
+    "cow": "cowsay hello world!"
   },
   "repository": {
     "type": "git",
