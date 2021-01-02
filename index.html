@@ -7,6 +7,7 @@
   <title>Document</title>
   <link href="css/normalize-css.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -257,8 +258,22 @@
       <h3 class="frame__title">NPM</h3>
       <p>
         Manager paczek do node (repozytorium), pozwala budować projekt
-        szybciej. <a href="https://yarnpkg.com/en/">Yarn</a> <a href="https://www.npmjs.com/">NPM</a>
+        szybciej. Popularne są npm lub yarn. <a href="https://yarnpkg.com/en/">Yarn</a> <a
+          href="https://www.npmjs.com/">NPM</a>
+        Node.js ściągamy bezpośrednio na komputer, NPM instalujemy poprzez komendę w terminalu install.
+        NPX (execute) pozwala na uruchomienie skryptu bez instalowania. Użycie npx może np. posłużyć do przetestowania
+        danej paczki.
       </p>
+      <h3 class="frame__title">SASS</h3>
+      <p>SASS służy do porządkowania i upiększania linijek kodu w css. Korzystamy z niego w przeglądarce, aby sprawdzić,
+        jak SASS przekonwertuje nasze polecenia z css. <a href="https://www.sassmeister.com/">SASS Meister</a>
+        Docelowo chcemy zastąpić w naszym visual studio code plik css na scss. Gdy to już zrobimy i podepniemy w stylach
+        scss, od tej pory należy pracować nad stylami wyłącznie w scss. Zmiany w css nie będą automatycznie przenoszone
+        do scss a tylko na odwrót przy zastosowaniu w terminalu polecenia npx node-sass źródło pliku.scss źródło
+        pliku.css. Aby nie musieć cały czas wpisywać tej komendy w terminalu, można podczas pracy nad stylami dodać w
+        terminalu -w (watch), które obserwuje zmiany wprowadzane w stylach. Charakterystyczne dla pracy w SASS jest
+        używanie "&", działa to trochę jak klasy w BEM-ie, to znaczy, jeśli kolejne klasy mają wspólną nazwę (człon), to
+        kolejne ich części można dodawać w SASS po znaku "&" (ampersand).</p>
     </article>
   </main>
 
