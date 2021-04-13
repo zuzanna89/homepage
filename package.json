@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "node-sass": "^5.0.0",
     "sass": "^1.30.0"
   },
   "devDependencies": {},

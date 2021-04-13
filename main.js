@@ -30,13 +30,13 @@ const myResult = calculate(age);
 console.log(myResult);
 console.log (age);
 
-function greet (age, firstName){
-console.log (`Witaj mam ${age} lat i na imię ${firstName}`);
+function greet (age, name){
+console.log (`Witaj mam ${age} lat i na imię ${name}`);
 }
 greet (19, 'Basia');
 
 console.log (`Witaj mam ${age} lat i na imię ${name}`);
-greet (name,age);
+greet (age,name);
 
 function helloWorld () {
     console.log('Witaj świecie');
@@ -139,8 +139,6 @@ console.log(button)
 
 button.addEventListener ('click', myClick);
 
-
-
 const hamburger = document.querySelector ('.hamburger--js');
 
 console.log(button)
@@ -149,3 +147,4 @@ hamburger.addEventListener('click',() => {
 const nav = document.querySelector ('.navigation--js');
 nav.classList.toggle ('navigation--open');
 })
+

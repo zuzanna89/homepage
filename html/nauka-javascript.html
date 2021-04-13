@@ -1,376 +1,377 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navigation navigation--js navigation--open">
-        <a
-          class="navigation__link navigation__link--homepage"
-          href="/index.html"
-          >Strona główna</a
-        >
-        <a class="navigation__link" href="/html/nauka-html.html">Nauka html</a>
-        <a class="navigation__link" href="/html/nauka-style.html"
-          >Nauka style</a
-        >
-        <a class="navigation__link" href="/html/nauka-javascript.html"
-          >Nauka JavaScript</a
-        >
-        <a class="navigation__link" href="/html/moje-hobby.html">Moje hobby</a>
-        <a class="navigation__link" href="/html/flexbox.html">Flexbox</a>
-        <a class="navigation__link" href="/html/background.html">Background</a>
-      </nav>
-      <button class="hamburger hamburger--js" aria-label="Otwórz menu">
-        Menu
-      </button>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navigation navigation--js navigation--open">
+      <a class="navigation__link navigation__link--homepage" href="/index.html">Strona główna</a>
+      <a class="navigation__link" href="/html/nauka-html.html">Nauka html</a>
+      <a class="navigation__link" href="/html/nauka-style.html">Nauka style</a>
+      <a class="navigation__link" href="/html/nauka-javascript.html">Nauka JavaScript</a>
+      <a class="navigation__link" href="/html/moje-hobby.html">Moje hobby</a>
+      <a class="navigation__link" href="/html/flexbox.html">Flexbox</a>
+      <a class="navigation__link" href="/html/background.html">Background</a>
+    </nav>
+    <button class="hamburger hamburger--js" aria-label="Otwórz menu">
+      Menu
+    </button>
+  </header>
+  <main class="main">
+    <header id="top">
+      <h1 class="main-heading">JavaScript</h1>
     </header>
-    <main class="main">
-      <header id="top">
-        <h1 class="main-heading">JavaScript</h1>
-      </header>
-      <section>
-        <h2 class="notes__title">Do czego JavaScript</h2>
-        <p class="notes__description">
-          Pozwala na interakcje z użytkownikiem i "robi rzeczy". Korzysta ze
-          skryptu ECMA (ES6+), który jest ustandaryzowanym językiem
-          programowania. Kod wrzucamy tuż przed zakończeniemy body, zaczynamy go
-          znacznikiem script. Aby połączyć kod z dokumentem js należy użyć opcji
-          src (nie href).
+    <section>
+      <h2 class="notes__title">Do czego JavaScript</h2>
+      <p class="notes__description">
+        Pozwala na interakcje z użytkownikiem i "robi rzeczy". Korzysta ze
+        skryptu ECMA (ES6+), który jest ustandaryzowanym językiem
+        programowania. Kod wrzucamy tuż przed zakończeniemy body, zaczynamy go
+        znacznikiem script. Aby połączyć kod z dokumentem js należy użyć opcji
+        src (nie href).
+        <br />
+        <br />
+        <b>JavaScript składa się z:
           <br />
           <br />
-          <b
-            >JavaScript składa się z:
-            <br />
-            <br />
-            -wartości,
-            <br />
-            -operacji porównywania,
-            <br />
-            -literałów,
-            <br />
-            -zmiennych,
-            <br />
-            -obiektów
-            <br />
-            -i funkcji.</b
-          >
+          -wartości,
+          <br />
+          -operacji porównywania,
+          <br />
+          -literałów,
+          <br />
+          -zmiennych,
+          <br />
+          -obiektów
+          <br />
+          -i funkcji.</b>
 
-          <br />
-          <br />
-          Polecenie <b>console.log</b> pozwala na zobaczenie działania kodu w
-          konsoli (console), która znajduje się w narzędziach deweloperskich.
-          <b>Alt+command+I </b>pozwala otworzyć narzędzia deweloperskie. W
-          Windowsie i w Linuksie są to F12.
-          <br />
-          <br />
-          <b>const (zmienna) pozwala przypisać wartości np. const age</b>, gdzie
-          w osobnym miejscu zdefiniujemy nasz wiek age=32, lub const firstName =
-          'Zuzia', ma stałe połączenie. Zmienna <b>let</b> pozwala zmienić
-          (podmienić) wartość np. let newName i np. pod newName dopisujemy inne
-          imię. <br />
-          <b>literały są zapisywane przez tzw. backtick ``</b> i wyglądają tak:
-          console.log ('Siema, nazywam się ${firstName')i mam ${age} lat.`)
-        </p>
-      </section>
+        <br />
+        <br />
+        Polecenie <b>console.log</b> pozwala na zobaczenie działania kodu w
+        konsoli (console), która znajduje się w narzędziach deweloperskich.
+        <b>Alt+command+I </b>pozwala otworzyć narzędzia deweloperskie. W
+        Windowsie i w Linuksie są to F12.
+        <br />
+        <br />
+        <b>const (zmienna) pozwala przypisać wartości np. const age</b>, gdzie
+        w osobnym miejscu zdefiniujemy nasz wiek age=32, lub const firstName =
+        'Zuzia', ma stałe połączenie. Zmienna <b>let</b> pozwala zmienić
+        (podmienić) wartość np. let newName i np. pod newName dopisujemy inne
+        imię. <br />
+        <b>literały są zapisywane przez tzw. backtick ``</b> i wyglądają tak:
+        console.log ('Siema, nazywam się ${firstName')i mam ${age} lat.`)
+      </p>
+    </section>
 
-      <article class="frame">
-        <h3 class="frame__title">Typy proste w js (primitives)</h3>
-        <p class="frame__description">
-          string - tekst, który musimy wziąć w pojedynczy lub podwójny
-          cudzysłów.
-          <br />
-          number <br />
-          bigint - duża liczba <br />
-          boolean - true lub false <br />
-          wartość celowo niezdefiniowana, po to, abyśmy mogli ją później dopisać
-          <br />undefined - brak definicji <br />
-          symbol (rzadko używane)
-          <br />
-          polecenie <b>typeof</b> pozwala sprawdzić jakiego typu jest dana
-          zmienna np. typeof newName=string, typeof age=number, typeof
-          carColor=null. <br /><b>Immutability</b> oznacza, że nie można zmienić
-          primitive values, możemy jedynie dopisać im wartości, a raczej
-          edytować połączenie między nimi.
-        </p>
-      </article>
-      <article class="frame">
-        <h3 class="frame__title">
-          Funkcje w JS
-        </h3>
-        <p class="frame__description">
-          Funkcje posiadają argumenty, np.liczby, a słowem kluczowym jest
-          return, które determinuje co ma nam zwrócić dana funkcja - jakiego
-          rodzaju wynik. Jeśli chcemy uzyskać wynik w rozumieniu matematycznym,
-          możemy użyć nazwy funkcji calculate. Jeśli funkcja nie ma
-          zdefiniowanego return, to będzie to undefined.
-          <br />Argumentów możemy podać kilka w jednym miejscu lub nie podawać
-          żadnego.
+    <article class="frame">
+      <h3 class="frame__title">Typy proste w js (primitives)</h3>
+      <p class="frame__description">
+        string - tekst, który musimy wziąć w pojedynczy lub podwójny
+        cudzysłów.
+        <br />
+        number <br />
+        bigint - duża liczba <br />
+        boolean - true lub false <br />
+        wartość celowo niezdefiniowana, po to, abyśmy mogli ją później dopisać
+        <br />undefined - brak definicji <br />
+        symbol (rzadko używane)
+        <br />
+        polecenie <b>typeof</b> pozwala sprawdzić jakiego typu jest dana
+        zmienna np. typeof newName=string, typeof age=number, typeof
+        carColor=null. <br /><b>Immutability</b> oznacza, że nie można zmienić
+        primitive values, możemy jedynie dopisać im wartości, a raczej
+        edytować połączenie między nimi.
+      </p>
+    </article>
+    <article class="frame">
+      <h3 class="frame__title">
+        Funkcje w JS
+      </h3>
+      <p class="frame__description">
+        Funkcje posiadają argumenty, np.liczby, a słowem kluczowym jest
+        return, które determinuje co ma nam zwrócić dana funkcja - jakiego
+        rodzaju wynik. Jeśli chcemy uzyskać wynik w rozumieniu matematycznym,
+        możemy użyć nazwy funkcji calculate. Jeśli funkcja nie ma
+        zdefiniowanego return, to będzie to undefined.
+        <br />Argumentów możemy podać kilka w jednym miejscu lub nie podawać
+        żadnego.
 
-          <br />
-          <br />
-          <b> Po co stosuje się funkcje? </b>
-          <br />
-          <br />Deklarujemy kod, który się powtarza zgodnie z zasadą DRY (don't
-          repeat yourself). <br />Kod staje się też bardziej czytelny.
-          <br />Łatwiej nam znaleźć błędy. <br />Wystarczy, że zmienimy dane w
-          jednym miejscu, by zaktualizowały się dane wszędzie.
-        </p>
-      </article>
+        <br />
+        <br />
+        <b> Po co stosuje się funkcje? </b>
+        <br />
+        <br />Deklarujemy kod, który się powtarza zgodnie z zasadą DRY (don't
+        repeat yourself). <br />Kod staje się też bardziej czytelny.
+        <br />Łatwiej nam znaleźć błędy. <br />Wystarczy, że zmienimy dane w
+        jednym miejscu, by zaktualizowały się dane wszędzie.
+      </p>
+    </article>
 
-      <section>
-        <h2 class="notes__title">Przykłady funkcji</h2>
-        <p class="notes__description">
-          Składniki funkcji<br />
-          <br />
-          <img src="/img/function-ingredients.png" alt="Składniki funkcji" />
-          <br />
-          <br />
-          Przykład funkcji calculate
-          <br />
-          <br />
-          <img src="/img/function.png" alt="Funkcja" />
-          <br />
-          <br />
-          Przykład funkcji calculate w dev tools
-          <br />
-          <br />
-          <img src="/img/function-dev-tools.png" alt="Funkcja w dev tools" />
-          <br />
-          <br />
-          Przykład funkcji greet
-          <br />
-          <br />
-          <img src="/img/function-1.png" alt="Funkcja-1" />
-          <br />
-          <br />
-          Efekt przy zdefiniowaniu jednego argumentu = undefined
-          <br />
-          <br />
+    <section>
+      <h2 class="notes__title">Przykłady funkcji</h2>
+      <p class="notes__description">
+        Składniki funkcji<br />
+        <br />
+        <img src="/img/function-ingredients.png" alt="Składniki funkcji" />
+        <br />
+        <br />
+        Przykład funkcji calculate
+        <br />
+        <br />
+        <img src="/img/function.png" alt="Funkcja" />
+        <br />
+        <br />
+        Przykład funkcji calculate w dev tools
+        <br />
+        <br />
+        <img src="/img/function-dev-tools.png" alt="Funkcja w dev tools" />
+        <br />
+        <br />
+        Przykład funkcji greet
+        <br />
+        <br />
+        <img src="/img/function-1.png" alt="Funkcja-1" />
+        <br />
+        <br />
+        Efekt przy zdefiniowaniu jednego argumentu = undefined
+        <br />
+        <br />
 
-          <img src="/img/function-2.png" alt="Funkcja-2" />
-        </p>
-      </section>
-      <section>
-        <h2 class="notes__title">
-          JavaScript jest językiem obiektowym
-        </h2>
-        <p class="notes_description">
-          Nasz świat jest obiektowy - np. człowiek ma imię, kolor skóry, wiek,
-          kolor oczu, włosów, zawód itp. <br />Samochód ma kolor, moc silnika,
-          liczbę koni mechanicznych, liczbę kół, liczbę miejsc itp., są to tak
-          zwane <b>właściwości lub własności (properties)</b>.
+        <img src="/img/function-2.png" alt="Funkcja-2" />
+      </p>
+    </section>
+    <section>
+      <h2 class="notes__title">
+        JavaScript jest językiem obiektowym
+      </h2>
+      <p class="notes_description">
+        Nasz świat jest obiektowy - np. człowiek ma imię, kolor skóry, wiek,
+        kolor oczu, włosów, zawód itp. <br />Samochód ma kolor, moc silnika,
+        liczbę koni mechanicznych, liczbę kół, liczbę miejsc itp., są to tak
+        zwane <b>właściwości lub własności (properties)</b>.
+        <br />
+        <br />
+        Zarówno człowiek, jak i samochód mogą wykonywać różne
+        <b>akcje (zadania)</b>, np. człowiek może chodzić, jeździć, mówić,
+        tańczyć, spać a samochód jeździć do przodu, cofać się, używać
+        klaksona, wycieraczek itp.
+        <br />
+        <br />
+        Również obiekty w JavaScript możemy opisać.
+        <br />
+        <b>Używamy do tego par, które składają się z klucza i wartości
+          (key:value), np. diameter:10000, name:'deathStar' i na końcu
+          wstawiamy , .
+        </b>
+        <br />Klucz musi być unikalny w ramach obiektu (wystąpić tylko raz), a
+        jako wartość możemy podać
+        <b>prymitywy (string, boolean, number itp. oraz funkcje i
+          zagnieżdżenia). Poniżej opisany obiekt - Gwiazda śmierci.
           <br />
-          <br />
-          Zarówno człowiek, jak i samochód mogą wykonywać różne
-          <b>akcje (zadania)</b>, np. człowiek może chodzić, jeździć, mówić,
-          tańczyć, spać a samochód jeździć do przodu, cofać się, używać
-          klaksona, wycieraczek itp.
-          <br />
-          <br />
-          Również obiekty w JavaScript możemy opisać.
-          <br />
-          <b
-            >Używamy do tego par, które składają się z klucza i wartości
-            (key:value), np. diameter:10000, name:'deathStar' i na końcu
-            wstawiamy , .
-          </b>
-          <br />Klucz musi być unikalny w ramach obiektu (wystąpić tylko raz), a
-          jako wartość możemy podać
-          <b
-            >prymitywy (string, boolean, number itp. oraz funkcje i
-            zagnieżdżenia). Poniżej opisany obiekt - Gwiazda śmierci.
-            <br />
-          </b>
-          <br />
-          <br />
-          <img src="/img/deathstar.png" alt="Gwiazda śmierci" />
-          <br />
-          <br />
-          Poniżej możemy zobaczyć jak wygląda <b>zagnieżdżenie obiektu.</b>
-          <br />
-          <br />
-          <img src="/img/nesting.png" alt="Nesting objects" />
-          <br />
-          <br />
-          Możemy się odwołać do danej właściwości (znaleźć jej wartość) używając
-          .notation (dot notation). W zależności od tego jak bardzo chcemy
-          zagłębić się w szczegóły, należy po dot wypisać wartość, której
-          szukamy jak na poniższym obrazku.
-          <br />
-          <br />
-          <img src="/img/dot-notation.png" alt="Dot notation" />
-          <br />
-          <br />
-          Wywołanie akcji ustawionej w js jako fire.
-          <br />
-          <br />
-          <img src="/img/rebel-ship-destroyed.png" alt="Action" />
-          <br />
-          <br />
-          Możemy również użyć opcji bracket notation. Wtedy musimy naszą
-          właściwość (własność) opakować w stringi.
-          <br />
-          <br />
-          <img src="/img/brackets.png" alt="Brackets" />
-          <br />
-          <br />
-          Poniższy przykład idealnie obrazuje, że funkcje tworzą przypisanie
-          (połączenie)do wartości, ale nie zmieniają samych wartości. Na
-          przykładzie widać też, że kolejność wpisywanych poleceń ma ogromne
-          znaczenie. Porównaj wartości przed wprowadzeniem zmian i po.
-          <br />
-          <br />
-          <img
-            src="/img/immutability-objects.png"
-            alt="Niemutowalność w obiektach"
-          />
-        </p>
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Logika w JS</h3>
-        <p class="frame__description">
-          W JavaSrcipcie występuje kilka podstawowych operatorów (porównań),
-          które pozwalają nam na zdefiniowanie, czy dane porównanie to prawda,
-          czy fałsz. W logice prawda i fałsz są podstawowymi wartościami i
-          podobnie funkcjonuje komputer oraz programowanie. Jednym ze słów
-          kluczowych jest <strong>"if"</strong>, które w zależności od tego jaki
-          ustalimy operator w wyrażeniu logicznym, będzie nam zwracać określone
-          wyniki.
-        </p>
-        <ul>
-          <li class="frame__important">> - lewa strona większa od prawej</li>
-          <li class="frame__important">
-            &lt; - lewa strona mniejsza od prawej
-          </li>
-          <li class="frame__important">
-            >= - lewa strona większa/ równa prawej
-          </li>
-          <li class="frame__important">
-            &lt;= - lewa strona mniejsza/ równa prawej
-          </li>
-          <li class="frame__important">== - obie strony równe</li>
-          <li class="frame__important">
-            === - obie strony równe (sprawdza też typeof)
-          </li>
-          <li class="frame__important">!= - obie strony różne</li>
-          <li class="frame__important">
-            !== - obie strony różne (sprawdza też typeof)
-          </li>
-        </ul>
-      </article>
-      <section class="notes">
-        <h2 class="notes__title">Wartości falsy i truthy</h2>
-        Wartości falsy:
-        <ul>
-          <li>false</li>
-          <li>0</li>
-          <li>","",`` (puste string</li>
-          <li>null</li>
-          <li>undefined</li>
-          <li>NaN - not a number</li>
-        </ul>
+        </b>
+        <br />
+        <br />
+        <img src="/img/deathstar.png" alt="Gwiazda śmierci" />
+        <br />
+        <br />
+        Poniżej możemy zobaczyć jak wygląda <b>zagnieżdżenie obiektu.</b>
+        <br />
+        <br />
+        <img src="/img/nesting.png" alt="Nesting objects" />
+        <br />
+        <br />
+        Możemy się odwołać do danej właściwości (znaleźć jej wartość) używając
+        .notation (dot notation). W zależności od tego jak bardzo chcemy
+        zagłębić się w szczegóły, należy po dot wypisać wartość, której
+        szukamy jak na poniższym obrazku.
+        <br />
+        <br />
+        <img src="/img/dot-notation.png" alt="Dot notation" />
+        <br />
+        <br />
+        Wywołanie akcji ustawionej w js jako fire.
+        <br />
+        <br />
+        <img src="/img/rebel-ship-destroyed.png" alt="Action" />
+        <br />
+        <br />
+        Możemy również użyć opcji bracket notation. Wtedy musimy naszą
+        właściwość (własność) opakować w stringi.
+        <br />
+        <br />
+        <img src="/img/brackets.png" alt="Brackets" />
+        <br />
+        <br />
+        Poniższy przykład idealnie obrazuje, że funkcje tworzą przypisanie
+        (połączenie)do wartości, ale nie zmieniają samych wartości. Na
+        przykładzie widać też, że kolejność wpisywanych poleceń ma ogromne
+        znaczenie. Porównaj wartości przed wprowadzeniem zmian i po.
+        <br />
+        <br />
+        <img src="/img/immutability-objects.png" alt="Niemutowalność w obiektach" />
+      </p>
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Logika w JS</h3>
+      <p class="frame__description">
+        W JavaSrcipcie występuje kilka podstawowych operatorów (porównań),
+        które pozwalają nam na zdefiniowanie, czy dane porównanie to prawda,
+        czy fałsz. W logice prawda i fałsz są podstawowymi wartościami i
+        podobnie funkcjonuje komputer oraz programowanie. Jednym ze słów
+        kluczowych jest <strong>"if"</strong>, które w zależności od tego jaki
+        ustalimy operator w wyrażeniu logicznym, będzie nam zwracać określone
+        wyniki.
+      </p>
+      <ul>
+        <li class="frame__important">> - lewa strona większa od prawej</li>
+        <li class="frame__important">
+          &lt; - lewa strona mniejsza od prawej
+        </li>
+        <li class="frame__important">
+          >= - lewa strona większa/ równa prawej
+        </li>
+        <li class="frame__important">
+          &lt;= - lewa strona mniejsza/ równa prawej
+        </li>
+        <li class="frame__important">== - obie strony równe</li>
+        <li class="frame__important">
+          === - obie strony równe (sprawdza też typeof)
+        </li>
+        <li class="frame__important">!= - obie strony różne</li>
+        <li class="frame__important">
+          !== - obie strony różne (sprawdza też typeof)
+        </li>
+      </ul>
+    </article>
+    <section class="notes">
+      <h2 class="notes__title">Wartości falsy i truthy</h2>
+      Wartości falsy:
+      <ul>
+        <li>false</li>
+        <li>0</li>
+        <li>","",`` (puste string</li>
+        <li>null</li>
+        <li>undefined</li>
+        <li>NaN - not a number</li>
+      </ul>
 
-        Wartości truthy:
-        <ul>
-          <li>true</li>
-          <li>'tekst'</li>
-          <li>12 (liczby większe od 0)</li>
-          <li>-4 (liczby ujemne)/li></li>
-          <li>{} (obiekty)</li>
-          <li>[] (tabele)</li>
-        </ul>
-        Oczywiście istnieją także inne wyrażenia:
-        <ul>
-          <li>AND - wszystkie warunki muszą być spełnione (if..and - &&)</li>
-          <li>OR - przynajmniej 1 argument musi być prawdą</li>
-          <li>
-            NOT - argument odwrócony (if!() - używać z rozwagą (!false=>true,
-            !true=false)
-          </li>
-          <li>
-            IF..ELSE - to taka wartość jak w Excelu, jeśli (prawda), jeśli
-            (fałsz), można dodać kilka else, wtedy kod będzie szukał prawdy i
-            pokaże pierwszy wynik, który jest prawdziwy.
-          </li>
-          <li>
-            SWITCH - switch, case 1:, break; case:2: break; default:, switch
-            pozwala na wpisanie kilku przypadków i posiada opcję default, która
-            definiuje jakie jest domyślne wyrażenie.
-          </li>
-        </ul>
-        <img src="/img/js-switch.png" alt="js-switch" />
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Eventy</h3>
-        <p class="frame__description"></p>
-        Jak wiemy, programowanie polega na tłumaczeniu języka naturalnego na
-        język zrozumiały przez komputer. Od JS oczekujemy, że zamieni słowa na
-        czyny:) Button to znacznik w html-u, który w przeciwieństwie do
-        &lt;a&gt;, który odsyła nas w jakieś miejsce, button połączony z js
-        pozwala na interakcje na stronie. Może też być wykorzystany zamiast
-        input i submit do przesyłania formularzy. Pozwoli nam także na
-        rozwinięcie menu np. podczas tworzenia menu typu hamburger. Za pomocą
-        event w js możemy wykonać jakąś akcję. Częste są np. akcje mouseEvent
-        (np. click) z funkcją addEventlistener, które wykonują jakieś zadanie po
-        kliknięciu myszką, np. zamiana tekstu nagłówka po kliknięciu myszką czy
-        rozwinięcie hamburger menu. W poniższym przykładzie hamburger menu
-        zgodnie z ustawieniami media query jest widoczny jedynie na urządzeniach
-        mobilnych. Funkcja toggle pozwala na zwinięcie lub rozwinięcie menu i
-        jest to zdefiniowane również w html.
-        <strong class="frame__important"
-          ><a
-            href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events"
-            >Przykłady eventów</a
-          ></strong
-        >
-        <p>
-          Widok click w html
-          <br />
-          <img src="/img/click-html.png" alt="click-html" />
-        </p>
-        <p>
-          Widok click w js
-          <br />
-          <img src="/img/click-js.png" alt="click-html" />
-        </p>
-        <p>
-          Widok na stronie
-          <br />
-          <img src="/img/click-before.png" alt="click-before" />
-          <img src="/img/click-after.png" alt="click-after" />
-        </p>
-        <p>
-          Hamburger menu w js<br />
-          <img src="/img/click-hamburger-js.png" alt="click-hamburger-js" />
-        </p>
-        <p>
-          Hamburger menu w html
-          <br />
-          <img src="/img/html-hamburger.png" alt="html-hamburger" />
-          <br />
-          <img src="/img/hamburger-navigation.png" alt="hamburger-navigation" />
-        </p>
-        <p>
-          Hamburger menu closed
-          <br />
-          <img src="/img/hamburger-menu-close.png" alt="hamburger-menu-close" />
-        </p>
-        <p>
-          Hamburger menu open
-          <br />
-          <img src="/img/hamburger-menu-open.png" alt="hamburger-menu-open" />
-        </p>
-      </article>
-    </main>
-    <footer>
-      Dziękuję za uwagę, wszystkie prawa zastrzeżone.
-      <b> <a href="#top">Wróć na górę strony</a></b>
-    </footer>
-    <script src="secondary.js"></script>
-  </body>
+      Wartości truthy:
+      <ul>
+        <li>true</li>
+        <li>'tekst'</li>
+        <li>12 (liczby większe od 0)</li>
+        <li>-4 (liczby ujemne)/li></li>
+        <li>{} (obiekty)</li>
+        <li>[] (tabele)</li>
+      </ul>
+      Oczywiście istnieją także inne wyrażenia:
+      <ul>
+        <li>AND - wszystkie warunki muszą być spełnione (if..and - &&)</li>
+        <li>OR - przynajmniej 1 argument musi być prawdą</li>
+        <li>
+          NOT - argument odwrócony (if!() - używać z rozwagą (!false=>true,
+          !true=false)
+        </li>
+        <li>
+          IF..ELSE - to taka wartość jak w Excelu, jeśli (prawda), jeśli
+          (fałsz), można dodać kilka else, wtedy kod będzie szukał prawdy i
+          pokaże pierwszy wynik, który jest prawdziwy.
+        </li>
+        <li>
+          SWITCH - switch, case 1:, break; case:2: break; default:, switch
+          pozwala na wpisanie kilku przypadków i posiada opcję default, która
+          definiuje jakie jest domyślne wyrażenie.
+        </li>
+      </ul>
+      <img src="/img/js-switch.png" alt="js-switch" />
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Eventy</h3>
+      <p class="frame__description"></p>
+      Jak wiemy, programowanie polega na tłumaczeniu języka naturalnego na
+      język zrozumiały przez komputer. Od JS oczekujemy, że zamieni słowa na
+      czyny:) Button to znacznik w html-u, który w przeciwieństwie do
+      &lt;a&gt;, który odsyła nas w jakieś miejsce, button połączony z js
+      pozwala na interakcje na stronie. Może też być wykorzystany zamiast
+      input i submit do przesyłania formularzy. Pozwoli nam także na
+      rozwinięcie menu np. podczas tworzenia menu typu hamburger. Za pomocą
+      event w js możemy wykonać jakąś akcję. Częste są np. akcje mouseEvent
+      (np. click) z funkcją addEventlistener, które wykonują jakieś zadanie po
+      kliknięciu myszką, np. zamiana tekstu nagłówka po kliknięciu myszką czy
+      rozwinięcie hamburger menu. W poniższym przykładzie hamburger menu
+      zgodnie z ustawieniami media query jest widoczny jedynie na urządzeniach
+      mobilnych. Funkcja toggle pozwala na zwinięcie lub rozwinięcie menu i
+      jest to zdefiniowane również w html.
+      <strong class="frame__important"><a
+          href="https://developer.mozilla.org/en-US/docs/Web/Events#Mouse_events">Przykłady eventów</a></strong>
+      <p>
+        Widok click w html
+        <br />
+        <img src="/img/click-html.png" alt="click-html" />
+      </p>
+      <p>
+        Widok click w js
+        <br />
+        <img src="/img/click-js.png" alt="click-html" />
+      </p>
+      <p>
+        Widok na stronie
+        <br />
+        <img src="/img/click-before.png" alt="click-before" />
+        <img src="/img/click-after.png" alt="click-after" />
+      </p>
+      <p>
+        Hamburger menu w js<br />
+        <img src="/img/click-hamburger-js.png" alt="click-hamburger-js" />
+      </p>
+      <p>
+        Hamburger menu w html
+        <br />
+        <img src="/img/html-hamburger.png" alt="html-hamburger" />
+        <br />
+        <img src="/img/hamburger-navigation.png" alt="hamburger-navigation" />
+      </p>
+      <p>
+        Hamburger menu closed
+        <br />
+        <img src="/img/hamburger-menu-close.png" alt="hamburger-menu-close" />
+      </p>
+      <p>
+        Hamburger menu open
+        <br />
+        <img src="/img/hamburger-menu-open.png" alt="hamburger-menu-open" />
+      </p>
+      <p>
+        Importowanie modułów JS
+        <br />
+        Common JS występuje w skryptach node'owych, a ES6 w przeglądarce.
+        Żeby móc wykonać import potrzebujemy komendy &lt;script type="module"&gt;
+        Aby podpiąć import pod dany skrypt, tworzymy nowy plik js, w którym umieszczamy skrypt i używamy polecenia
+        export dla danych funkcji. W pliku docelowym, do którego ma zostać zaimportowany skrypt, wpisujemy natomiast
+        import podając nazwę konkretnej funkcji i from podając źródło. W przypadku importu nazwanego stosujemy nazwę
+        funkcji w nawiasie sześciennym, jeśli funkcja jest defaultowa, nie używamy nawiasu. Można też zastosować
+        skrócone nazwy. Możemy wtedy zastosować komendę import długaistniejącanazwa as druga własnakrótkanazwa. Użycie
+        gwiazdki as pozwala pobranie/importowanie obiektu.
+        <br>
+        <img src="/img/js_import.PNG" alt="js-import" />
+        <br>
+        <img src="/img/export-js.PNG" alt="js-export" />
+
+      </p>
+    </article>
+  </main>
+  <footer>
+    Dziękuję za uwagę, wszystkie prawa zastrzeżone.
+    <b> <a href="#top">Wróć na górę strony</a></b>
+  </footer>
+  <script src="secondary.js"></script>
+</body>
+
 </html>

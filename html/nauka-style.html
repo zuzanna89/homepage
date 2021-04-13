@@ -1,457 +1,462 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navigation-flex">
-        <a class="navigation-flex__link--homepage" href="/index.html"
-          >Strona główna</a
-        >
-        <a class="navigation-flex__link" href="/html//nauka-html.html"
-          >Nauka html</a
-        >
-        <a class="navigation-flex__link" href="/html/nauka-style.html"
-          >Nauka style</a
-        >
-        <a class="navigation-flex__link" href="/html/nauka-javascript.html"
-          >Nauka JavaScript</a
-        >
-        <a class="navigation-flex__link" href="/html/moje-hobby.html"
-          >Moje hobby</a
-        >
-        <a class="navigation-flex__link" href="/html/flexbox.html">Flexbox</a>
-        <a class="navigation-flex__link" href="/html/background.html"></a>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navigation-flex">
+      <a class="navigation-flex__link--homepage" href="/index.html">Strona główna</a>
+      <a class="navigation-flex__link" href="/html//nauka-html.html">Nauka html</a>
+      <a class="navigation-flex__link" href="/html/nauka-style.html">Nauka style</a>
+      <a class="navigation-flex__link" href="/html/nauka-javascript.html">Nauka JavaScript</a>
+      <a class="navigation-flex__link" href="/html/moje-hobby.html">Moje hobby</a>
+      <a class="navigation-flex__link" href="/html/flexbox.html">Flexbox</a>
+      <a class="navigation-flex__link" href="/html/background.html"></a>
+    </nav>
+  </header>
+  <main class="main">
+    <br />
+    <header id="top">
+      <h1 class="main-heading">Style</h1>
     </header>
-    <main class="main">
+    <section>
+      <h2 class="notes__title">O czym będzie ta część?</h2>
+      <p class="notes__description">To się okaże</p>
+    </section>
+    <section id="Notatki">
+      <h2 class="notes__title">Notatki</h2>
+      <p class="notes__description">
+        Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
+        czego się nauczyłam. W fioletowych ramkach umieszczę ciekawe przykłady
+        zastosowania lub definicje, które sprawiają mi największy problem.
+      </p>
+    </section>
+    <section>
+      <h2 class="notes__title">Normalizacja vs. reset</h2>
+      <p class="notes__description">
+        Przeglądarki mają domyślnie ustawione style, które, jeśli nie
+        nadpiszemy własnych, mają ustawione określone wartości i właściwości.
+        Jeśli chcemy podejrzeć jakie są aktualne style, możemy w narzędziach
+        deweloperskich podejrzeć je jako "user agent stylesheet"
+        <b>Reset powoduje usunięcie wszystkich ustawień stylów, ale sprawia,
+          że tekst staje się mało czytelny, nie jest więc domyślnie
+          zalecany.</b>
+        Jeśli chcemy wykonać reset, należy usunąć powiązanie z dotychczasowym
+        plikiem stylów, w znaczniku <i>style</i> przed częścią main należy
+        zmienić margin i padding na zero oraz wpisać w outline: none. Zmiana
+        ustawień na outline: none jest wysoce niezalecana, ppnieważ utrudnia
+        korzystanie ze strony osobom, które mają np. wady wzroku lub
+        korzystają tylko z klawiatury do nawigacji strony, outline to ramka,
+        która pokazuje nam, w którym miejscu strony się znajdujemy. Aby usunąć
+        styl w listach należy wybrać list-style: none. Aby zastosować tę
+        operację należy użyć selektora gwiazdki *, który jest selektorem
+        uniwersalnym i wybiera wszystkie elementy na stronie. <br />Mniej
+        inwazyjną metodą zmiany stylów jest <b>normalizacja</b>, która pozwala
+        na ich zmianę czy ujednolicenie i dostosowanie do przeglądarek, aby
+        style były czytelne i sensowne, usuwa też błędy występujące w
+        przeglądarkach. Aby ją zastosować, należy skopiować z internetu plik
+        (fragment kodu, zbiór reguł) normalize.css i wkleić w nowym pliku ze
+        stylami. Można odwołanie do nowego pliku wkleić na wszystkich stronach
+        powyżej odwołania do naszego regularnego pliku css. Na przykładzie tej
+        strony, widać, że pole menu domyślnie "rozciągnęło" się na szerokość
+        całej strony, a tam, gdzie nie zastosowaliśmy normalizacji, pozostał
+        margines.
+      </p>
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Flexbox</h3>
+      Flexbox służy przede wszystkim do wyśrodkowywania elementów. Własność,
+      którą stosujemy to flex. Przy okazji div poznaliśmy własności block,
+      inline oraz inline-block. W przypadku flex w html też dobrze użyć div,
+      aby wprowadzić go w html. Poznaliśmy też położenie (position) takie jak
+      relative, fixed i sticky. Na potrzeby tego ćwiczenia utworzymy nową
+      stronę. Jeśli chcemy, aby tekst był wyśrodkowany w main, należy
+      zastosować margin auto.
+      <a href="flexbox.html">Flexbox</a>. Domyślnie flex posiada
+      display:block, przy zmianie na flex zmienia pozycję z poziomej na
+      pionową. Flex porusza się w dwóch osiach - row i column i jest to
+      <b>flex-direction</b>. Row jest wartością domyślną. Flex-wrap pozwala na
+      zawijanie naszych "pudełek" wierszy i kolumn. Dostępne parametry to:
+      <ul>
+        <li class="frame__important">nowrap</li>
+        <li class="frame__important">wrap</li>
+        <li class="frame__important">wrap-reverse</li>
+      </ul>
+      Jeśli chcemy zdefiniować w jednej linijce zarówno flex-direction, jak i
+      flex-wrap możemy zapisać je np. zamiast flex-direction:row;
+      flex-direction:wrap jako <b>flex-flow: row wrap</b>;
       <br />
-      <header id="top">
-        <h1 class="main-heading">Style</h1>
-      </header>
-      <section>
-        <h2 class="notes__title">O czym będzie ta część?</h2>
-        <p class="notes__description">To się okaże</p>
-      </section>
-      <section id="Notatki">
-        <h2 class="notes__title">Notatki</h2>
-        <p class="notes__description">
-          Tutaj będę zawierać najważniejsze informacje z każdego tygodnia -
-          czego się nauczyłam. W fioletowych ramkach umieszczę ciekawe przykłady
-          zastosowania lub definicje, które sprawiają mi największy problem.
-        </p>
-      </section>
-      <section>
-        <h2 class="notes__title">Normalizacja vs. reset</h2>
-        <p class="notes__description">
-          Przeglądarki mają domyślnie ustawione style, które, jeśli nie
-          nadpiszemy własnych, mają ustawione określone wartości i właściwości.
-          Jeśli chcemy podejrzeć jakie są aktualne style, możemy w narzędziach
-          deweloperskich podejrzeć je jako "user agent stylesheet"
-          <b
-            >Reset powoduje usunięcie wszystkich ustawień stylów, ale sprawia,
-            że tekst staje się mało czytelny, nie jest więc domyślnie
-            zalecany.</b
-          >
-          Jeśli chcemy wykonać reset, należy usunąć powiązanie z dotychczasowym
-          plikiem stylów, w znaczniku <i>style</i> przed częścią main należy
-          zmienić margin i padding na zero oraz wpisać w outline: none. Zmiana
-          ustawień na outline: none jest wysoce niezalecana, ppnieważ utrudnia
-          korzystanie ze strony osobom, które mają np. wady wzroku lub
-          korzystają tylko z klawiatury do nawigacji strony, outline to ramka,
-          która pokazuje nam, w którym miejscu strony się znajdujemy. Aby usunąć
-          styl w listach należy wybrać list-style: none. Aby zastosować tę
-          operację należy użyć selektora gwiazdki *, który jest selektorem
-          uniwersalnym i wybiera wszystkie elementy na stronie. <br />Mniej
-          inwazyjną metodą zmiany stylów jest <b>normalizacja</b>, która pozwala
-          na ich zmianę czy ujednolicenie i dostosowanie do przeglądarek, aby
-          style były czytelne i sensowne, usuwa też błędy występujące w
-          przeglądarkach. Aby ją zastosować, należy skopiować z internetu plik
-          (fragment kodu, zbiór reguł) normalize.css i wkleić w nowym pliku ze
-          stylami. Można odwołanie do nowego pliku wkleić na wszystkich stronach
-          powyżej odwołania do naszego regularnego pliku css. Na przykładzie tej
-          strony, widać, że pole menu domyślnie "rozciągnęło" się na szerokość
-          całej strony, a tam, gdzie nie zastosowaliśmy normalizacji, pozostał
-          margines.
-        </p>
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Flexbox</h3>
-        Flexbox służy przede wszystkim do wyśrodkowywania elementów. Własność,
-        którą stosujemy to flex. Przy okazji div poznaliśmy własności block,
-        inline oraz inline-block. W przypadku flex w html też dobrze użyć div,
-        aby wprowadzić go w html. Poznaliśmy też położenie (position) takie jak
-        relative, fixed i sticky. Na potrzeby tego ćwiczenia utworzymy nową
-        stronę. Jeśli chcemy, aby tekst był wyśrodkowany w main, należy
-        zastosować margin auto.
-        <a href="flexbox.html">Flexbox</a>. Domyślnie flex posiada
-        display:block, przy zmianie na flex zmienia pozycję z poziomej na
-        pionową. Flex porusza się w dwóch osiach - row i column i jest to
-        <b>flex-direction</b>. Row jest wartością domyślną. Flex-wrap pozwala na
-        zawijanie naszych "pudełek" wierszy i kolumn. Dostępne parametry to:
-        <ul>
-          <li class="frame__important">nowrap</li>
-          <li class="frame__important">wrap</li>
-          <li class="frame__important">wrap-reverse</li>
-        </ul>
-        Jeśli chcemy zdefiniować w jednej linijce zarówno flex-direction, jak i
-        flex-wrap możemy zapisać je np. zamiast flex-direction:row;
-        flex-direction:wrap jako <b>flex-flow: row wrap</b>;
+      <br />
+      Kolejne przydatne własności to:
+      <ul>
+        <li class="frame__important">justify-content</li>
+        <li class="frame__important">align-content</li>
+        <li class="frame__important">align-items</li>
+      </ul>
+      <dl>
+        <dt class="dt">justify-content</dt>
+        <dd>
+          pozwala na ustawienie elementów wzdłuż osi flex-direction i oferuje
+          poniższe warianty:
+        </dd>
+      </dl>
+      <ul>
+        <li class="frame__important">flex-start</li>
+        <li class="frame__important">flex-end</li>
+        <li class="frame__important">center</li>
+        <li class="frame__important">space-between</li>
+        <li class="frame__important">space-around</li>
+      </ul>
+
+      <dl>
+        <dt class="dt">align-content</dt>
+        <dd>
+          oferuje również takie własności jak powyżej i pozwala na ustawianie
+          wierszy/ kolumn wzdłuż osi przeciwnej do flex-direction. Domyślną
+          wartością jest <i>stretch</i>, który próbuje zawsze zmieścić tyle
+          treści ile się da.
+        </dd>
+
+        <dt class="dt">align-items</dt>
+        <dd>
+          pozwala na edytowanie wartości wewnątrz danego rzędu/ kolumny.
+          Domyślnie align-item jest ustawiony na opcje stretch, co oznacza, że
+          jeśli np. podwyższymy dany element poprzez dodanie tekstu, to inne
+          elementy znajdujące się w tym samym wierszu, dostosują się do niego.
+        </dd>
+
+        <dt class="dt">align-self</dt>
+        <dd>
+          pozwala na edytowanie naszego elementu niezależnie od położenia
+          reszty całego układu.
+        </dd>
+      </dl>
+      <p>
+        Jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są
+        obecnie, możemy użyć własności <b>order</b> i nadać poszczególnym
+        elementom różne numery (liczby), które ustawią je w pożądanej
+        kolejności.
+        <br />
+        konkretne elementy mogą się rozszerzać lub kurczyć, gdy wybierzemy
+        flex-grow:liczba i flex-shrink:liczba, można też równocześnie ustawić
+        flex-grow i flex-shrink. Flex-basis to tzw. rozmiar bazowy, który
+        jeśli usuniemy np. szerokość w naszym flex-direction:row, to zachowa
+        się jak szerokość, a jeśli wysokość w flex-direction:column, to
+        zachowa się jak wysokość.
+        <br />skrót flex pozwala opisać wszystkie 3 wartości na raz
+        flex-grow-flex-shrink-flex-basis
+      </p>
+    </article>
+    <section class="notes">
+      <h2 class="notes__title">Przykłady działania flexbox</h2>
+      <p class="notes__description">
+        Podstawy tworzenia flexboxa w CSS:
+        <img src="/img/flexbox-basic.png" alt="Podstawy tworzenia flexbox" />
         <br />
         <br />
-        Kolejne przydatne własności to:
-        <ul>
-          <li class="frame__important">justify-content</li>
-          <li class="frame__important">align-content</li>
-          <li class="frame__important">align-items</li>
-        </ul>
-        <dl>
-          <dt class="dt">justify-content</dt>
-          <dd>
-            pozwala na ustawienie elementów wzdłuż osi flex-direction i oferuje
-            poniższe warianty:
-          </dd>
-        </dl>
-        <ul>
-          <li class="frame__important">flex-start</li>
-          <li class="frame__important">flex-end</li>
-          <li class="frame__important">center</li>
-          <li class="frame__important">space-between</li>
-          <li class="frame__important">space-around</li>
-        </ul>
+        Widok przy ustawieniu display na "flex":
+        <img src="/img/flexbox-display-flex.png" alt="Widok display:flex" />
+        <br />
+        <br />
+        Widok po dodaniu kilku wierszy:
+        <br />
+        <img src="/img/dodanie-rows.png" alt="Dodanie wierszy" />
+        <br />
+        <br />
+        Widok przy zmianie flex-direction z domyślnego row na column:
+        <br />
+        <img src="/img/column.png" alt="Column-reverse" />
+        <br />
+        Widok przy column-reverse:
+        <br />
+        <br />
+        <img src="/img/column-reverse.png" alt="Column-reverse" />
+        <br />
+        <br />
+        Efekt działania przy wrap, nowrap, wrap-reverse;
+        <br />
+        <br />
+        <img src="/img/wrap.png" alt="Wrap" />
+        <img src="/img/nowrap.png" alt="Nowrap" />
+        <img src="/img/wrap-reverse.png" alt="Wrap-reverse" />
+        <br />
+        <br />
+        Justify-content:center
+        <br />
+        <br />
+        <img src="/img/flex-center.png" alt="flex-center" />
+        <br />
+        <br />
+        Justify-content:flex-end
+        <br />
+        <br />
+        <img src="/img/flex-end.png" alt="flex-end" />
+        <br />
+        Justify-content:space-around
+        <br />
+        <br />
+        <img src="/img/flex-space-around.png" alt="space-around" />
+        <br />
+        <br />
+        Justify-content:space-between
+        <br />
+        <br />
+        <img src="/img/flex-space-between.png" alt="space-between" />
+        <br />
+        <br />
+        Justify-content:center, align-content:center
+        <br />
+        <br />
+        <img src="/img/center-center.png" alt="center-center" />
+        <br />
+        <br />
+        Justify-content, align-content:space-between
+        <br />
+        <br />
+        <img src="/img/space-between-2.png" alt="space-between-2" />
+        <br />
+        <br />
+        align-items
+        <br />
+        <br />
+        <img src="/img/align-items.png" alt="align-items" />
+        <br />
+        <br />
+        justify-content, align-content, align-items widok flex-end
+        <br />
+        <br />
+        <img src="/img/longer-row2.png" alt="longer-row2" />
+        <br />
+        <br />
+        justify-content, align-content, align-items widok flex-start
+        <br />
+        <br />
+        <img src="/img/longer-row.png" alt="longer-row" />
+        <br />
+        <br />
 
-        <dl>
-          <dt class="dt">align-content</dt>
-          <dd>
-            oferuje również takie własności jak powyżej i pozwala na ustawianie
-            wierszy/ kolumn wzdłuż osi przeciwnej do flex-direction. Domyślną
-            wartością jest <i>stretch</i>, który próbuje zawsze zmieścić tyle
-            treści ile się da.
-          </dd>
+        <br />
+        <br />
+        align-items:baseline <br />
+        <br />
+        <img src="/img/baseline.png" alt="baseline" />
+        <br />
+        <br />
+        align-self
+        <img src="/img/align-self.png" alt="align-self" />
+        <br />
+        order
+        <br />
+        <br />
+        <img src="/img/order.png" alt="order" />
+        <img src="/img/order2.png" alt="order2" />
+        <br />
+        wrap<br />
+        <br />
+        <img src="/img/wrap-height.png" alt="wrap-height" />
+        <img src="/img/wrap-width-2.png" alt="wrap-width-2" />
+      </p>
+    </section>
+    <section class="notes">
+      <h2 class="notes__title">Tła</h2>
+      <p class="notes__description">
+        Istnieje 8 podstawowych własności tła i są to:
+      </p>
 
-          <dt class="dt">align-items</dt>
-          <dd>
-            pozwala na edytowanie wartości wewnątrz danego rzędu/ kolumny.
-            Domyślnie align-item jest ustawiony na opcje stretch, co oznacza, że
-            jeśli np. podwyższymy dany element poprzez dodanie tekstu, to inne
-            elementy znajdujące się w tym samym wierszu, dostosują się do niego.
-          </dd>
+      <ul>
+        <li class="frame__important">
+          background:image:url('ścieżka do pliku)
+        </li>
+        <li class="frame__important">
+          background:position - zawiera takie własności jak top, right,
+          bottom, left
+        </li>
+        <li>
+          background:repeat - pozwala powtórzyć tło, jeśli jest taka potrzeba
+          i o ile jest na tyle małe, że można taką operację przeprowadzić. Tło
+          można powielać względem osi-x,-y i na kilka innych sposobów
+        </li>
+        <li>
+          background:attachment - ma własności scroll, local, fixed, dzięki
+          niemu możemy scrollować stronę razem z tłem (scroll jest wartością
+          domyślną)
+        </li>
+        <li>
+          background:origin - definiuje w którym miejscu tło powinno się
+          zaczynać (border-box, padding-box, margin-box)
+        </li>
+        <li>
+          background:clip - definiuje w którym miejscu tło powinno być cięte
+          (border-box, padding-box, margin-box)
+        </li>
+        <li class="frame__important">
+          background:color
+        </li>
+        <li class="frame__important">
+          background:size - pozwala np. użyć opcji contain, czyli tło zmieści
+          się tam, gdzie jest treść
+        </li>
+      </ul>
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Gradienty</h3>
+      <p class="frame__description">
+        Gradienty
+        <br />
+        <br />
+        Jeśli chcemy, aby nasze tło miało gradient i było częściowo
+        przezroczyste musimy w wartości background:color wybrać rgb(a), gdzie
+        rgb oznacza red green blue, natomiast "a" pozwala zdefiniować stopień
+        przezroczystości, np. rgba (255,225,255,0.5), gdzie ostatnia wartość
+        to alpha. Gradienty możemy przetestować np. na stronie
+        <a href="https://cssgradient.io/">CSS Gradient</a>
+      </p>
+    </article>
 
-          <dt class="dt">align-self</dt>
-          <dd>
-            pozwala na edytowanie naszego elementu niezależnie od położenia
-            reszty całego układu.
-          </dd>
-        </dl>
-        <p>
-          Jeśli chcemy ułożyć nasze pudełka w innej kolejności niż np. są
-          obecnie, możemy użyć własności <b>order</b> i nadać poszczególnym
-          elementom różne numery (liczby), które ustawią je w pożądanej
-          kolejności.
-          <br />
-          konkretne elementy mogą się rozszerzać lub kurczyć, gdy wybierzemy
-          flex-grow:liczba i flex-shrink:liczba, można też równocześnie ustawić
-          flex-grow i flex-shrink. Flex-basis to tzw. rozmiar bazowy, który
-          jeśli usuniemy np. szerokość w naszym flex-direction:row, to zachowa
-          się jak szerokość, a jeśli wysokość w flex-direction:column, to
-          zachowa się jak wysokość.
-          <br />skrót flex pozwala opisać wszystkie 3 wartości na raz
-          flex-grow-flex-shrink-flex-basis
-        </p>
-      </article>
-      <section class="notes">
-        <h2 class="notes__title">Przykłady działania flexbox</h2>
-        <p class="notes__description">
-          Podstawy tworzenia flexboxa w CSS:
-          <img src="/img/flexbox-basic.png" alt="Podstawy tworzenia flexbox" />
-          <br />
-          <br />
-          Widok przy ustawieniu display na "flex":
-          <img src="/img/flexbox-display-flex.png" alt="Widok display:flex" />
-          <br />
-          <br />
-          Widok po dodaniu kilku wierszy:
-          <br />
-          <img src="/img/dodanie-rows.png" alt="Dodanie wierszy" />
-          <br />
-          <br />
-          Widok przy zmianie flex-direction z domyślnego row na column:
-          <br />
-          <img src="/img/column.png" alt="Column-reverse" />
-          <br />
-          Widok przy column-reverse:
-          <br />
-          <br />
-          <img src="/img/column-reverse.png" alt="Column-reverse" />
-          <br />
-          <br />
-          Efekt działania przy wrap, nowrap, wrap-reverse;
-          <br />
-          <br />
-          <img src="/img/wrap.png" alt="Wrap" />
-          <img src="/img/nowrap.png" alt="Nowrap" />
-          <img src="/img/wrap-reverse.png" alt="Wrap-reverse" />
-          <br />
-          <br />
-          Justify-content:center
-          <br />
-          <br />
-          <img src="/img/flex-center.png" alt="flex-center" />
-          <br />
-          <br />
-          Justify-content:flex-end
-          <br />
-          <br />
-          <img src="/img/flex-end.png" alt="flex-end" />
-          <br />
-          Justify-content:space-around
-          <br />
-          <br />
-          <img src="/img/flex-space-around.png" alt="space-around" />
-          <br />
-          <br />
-          Justify-content:space-between
-          <br />
-          <br />
-          <img src="/img/flex-space-between.png" alt="space-between" />
-          <br />
-          <br />
-          Justify-content:center, align-content:center
-          <br />
-          <br />
-          <img src="/img/center-center.png" alt="center-center" />
-          <br />
-          <br />
-          Justify-content, align-content:space-between
-          <br />
-          <br />
-          <img src="/img/space-between-2.png" alt="space-between-2" />
-          <br />
-          <br />
-          align-items
-          <br />
-          <br />
-          <img src="/img/align-items.png" alt="align-items" />
-          <br />
-          <br />
-          justify-content, align-content, align-items widok flex-end
-          <br />
-          <br />
-          <img src="/img/longer-row2.png" alt="longer-row2" />
-          <br />
-          <br />
-          justify-content, align-content, align-items widok flex-start
-          <br />
-          <br />
-          <img src="/img/longer-row.png" alt="longer-row" />
-          <br />
-          <br />
+    <article class="frame">
+      <h3 class="frame__title">Grid</h3>
+      <p class="frame__description">
+        W poprzednich lekcjach poznaliśmy box i flexbox, do czego służy więc
+        grid? Pozwala on na budowanie całego layoutu strony, podczas, gdy
+        flexbox pozwala na opakowywanie raczej konkretnych, mniejszych
+        elementów. Wiele porad i trików dotyczących grida można znaleźć na stronie <a href="https://css-tricks.com/">CSS
+          tricks</a>. Grid składa się przede wszystkim z
+        <strong class="frame__important">header, article, aside i footer.</strong>. Aside jest mniej ważne niż article i
+        może posłużyć do dodania
+        niejako "bocznej" notatki czy umiesczenia menu. Sam grid posiada grid
+        track (row lub column), grid line i grid cell oraz grid area. Grid
+        służy do tworzenia regularnych kształtów na bazie prostokąta. Nie jest
+        możliwe utworzenie klocków jak w tetrisie. Grid można wprowadzić np.
+        przez zastosowanie div w html.
+      </p>
+      <h3 class="frame__title">Jednostka fr</h3>
+      <p class="frame__description">
+        Jednostka fr działa niejako jak ułamek - wykorzystuje dostępną
+        przestrzeń i dzieli ją w zależności ile kolumn chcemy dodać. Może
+        występować razem z px lub %. Przykładowy zapis dla 3 kolumn to
+        grid-template-columns: 100px 1fr 2fr. Będzie to oznaczać tyle, że po
+        wykorzystaniu 100px na pierwszą kolumnę, fr wykorzysta pozostałą
+        przestrzeń i szerokość drugiej kolumny ustawi na 200% trzeciej
+        kolumny. Funkcja css-owa repeat (ileRazy, wartość) pozwala na
+        zdefiniowanie ile chcemy utworzyć kolumn i o jakiej szerokości, o ile
+        mają być jednakowe. Wartość column-gap lub row-gap pozwala nam na
+        "odklejenie"od siebie poszczególnuch kolumn i rzędów. Funkcja minmax
+        pozwala na zdefiniowanie ile minimalnej i maksymalnej szerokości może
+        mieć dana komórka, gdy ta wartość po zmniejszeniu okienka beędzie zbyt
+        mała, włączy się scroll.
+      </p>
+    </article>
+    <section class="notes">
+      <h2 class="notes__title">Grid layout przykłady</h2>
+      <p class="notes__description">Grid header</p>
+      <img src="/img/grid-header.png" alt="grid-header" />
 
-          <br />
-          <br />
-          align-items:baseline <br />
-          <br />
-          <img src="/img/baseline.png" alt="baseline" />
-          <br />
-          <br />
-          align-self
-          <img src="/img/align-self.png" alt="align-self" />
-          <br />
-          order
-          <br />
-          <br />
-          <img src="/img/order.png" alt="order" />
-          <img src="/img/order2.png" alt="order2" />
-          <br />
-          wrap<br />
-          <br />
-          <img src="/img/wrap-height.png" alt="wrap-height" />
-          <img src="/img/wrap-width-2.png" alt="wrap-width-2" />
-        </p>
-      </section>
-      <section class="notes">
-        <h2 class="notes__title">Tła</h2>
-        <p class="notes__description">
-          Istnieje 8 podstawowych własności tła i są to:
-        </p>
+      <p class="notes__description">Grid-article</p>
+      <img src="/img/grid-article.png" alt="grid-article" />
 
-        <ul>
-          <li class="frame__important">
-            background:image:url('ścieżka do pliku)
-          </li>
-          <li class="frame__important">
-            background:position - zawiera takie własności jak top, right,
-            bottom, left
-          </li>
-          <li>
-            background:repeat - pozwala powtórzyć tło, jeśli jest taka potrzeba
-            i o ile jest na tyle małe, że można taką operację przeprowadzić. Tło
-            można powielać względem osi-x,-y i na kilka innych sposobów
-          </li>
-          <li>
-            background:attachment - ma własności scroll, local, fixed, dzięki
-            niemu możemy scrollować stronę razem z tłem (scroll jest wartością
-            domyślną)
-          </li>
-          <li>
-            background:origin - definiuje w którym miejscu tło powinno się
-            zaczynać (border-box, padding-box, margin-box)
-          </li>
-          <li>
-            background:clip - definiuje w którym miejscu tło powinno być cięte
-            (border-box, padding-box, margin-box)
-          </li>
-          <li class="frame__important">
-            background:color
-          </li>
-          <li class="frame__important">
-            background:size - pozwala np. użyć opcji contain, czyli tło zmieści
-            się tam, gdzie jest treść
-          </li>
-        </ul>
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Gradienty</h3>
-        <p class="frame__description">
-          Gradienty
-          <br />
-          <br />
-          Jeśli chcemy, aby nasze tło miało gradient i było częściowo
-          przezroczyste musimy w wartości background:color wybrać rgb(a), gdzie
-          rgb oznacza red green blue, natomiast "a" pozwala zdefiniować stopień
-          przezroczystości, np. rgba (255,225,255,0.5), gdzie ostatnia wartość
-          to alpha. Gradienty możemy przetestować np. na stronie
-          <a href="https://cssgradient.io/">CSS Gradient</a>
-        </p>
-      </article>
+      <p class="notes__description">Grid-footer</p>
+      <img src="/img/grid-footer.png" alt="grid-footer" />
 
-      <article class="frame">
-        <h3 class="frame__title">Grid</h3>
-        <p class="frame__description">
-          W poprzednich lekcjach poznaliśmy box i flexbox, do czego służy więc
-          grid? Pozwala on na budowanie całego layoutu strony, podczas, gdy
-          flexbox pozwala na opakowywanie raczej konkretnych, mniejszych
-          elementów. Grid składa się przede wszystkim z
-          <strong class="frame__important"
-            >header, article, aside i footer.</strong
-          >. Aside jest mniej ważne niż article i może posłużyć do dodania
-          niejako "bocznej" notatki czy umiesczenia menu. Sam grid posiada grid
-          track (row lub column), grid line i grid cell oraz grid area. Grid
-          służy do tworzenia regularnych kształtów na bazie prostokąta. Nie jest
-          możliwe utworzenie klocków jak w tetrisie. Grid można wprowadzić np.
-          przez zastosowanie div w html.
-        </p>
-        <h3 class="frame__title">Jednostka fr</h3>
-        <p class="frame__description">
-          Jednostka fr działa niejako jak ułamek - wykorzystuje dostępną
-          przestrzeń i dzieli ją w zależności ile kolumn chcemy dodać. Może
-          występować razem z px lub %. Przykładowy zapis dla 3 kolumn to
-          grid-template-columns: 100px 1fr 2fr. Będzie to oznaczać tyle, że po
-          wykorzystaniu 100px na pierwszą kolumnę, fr wykorzysta pozostałą
-          przestrzeń i szerokość drugiej kolumny ustawi na 200% trzeciej
-          kolumny. Funkcja css-owa repeat (ileRazy, wartość) pozwala na
-          zdefiniowanie ile chcemy utworzyć kolumn i o jakiej szerokości, o ile
-          mają być jednakowe. Wartość column-gap lub row-gap pozwala nam na
-          "odklejenie"od siebie poszczególnuch kolumn i rzędów. Funkcja minmax
-          pozwala na zdefiniowanie ile minimalnej i maksymalnej szerokości może
-          mieć dana komórka, gdy ta wartość po zmniejszeniu okienka beędzie zbyt
-          mała, włączy się scroll.
-        </p>
-      </article>
-      <section class="notes">
-        <h2 class="notes__title">Grid layout przykłady</h2>
-        <p class="notes__description">Grid header</p>
-        <img src="/img/grid-header.png" alt="grid-header" />
-
-        <p class="notes__description">Grid-article</p>
-        <img src="/img/grid-article.png" alt="grid-article" />
-
-        <p class="notes__description">Grid-footer</p>
-        <img src="/img/grid-footer.png" alt="grid-footer" />
-
-        <p class="notes__description">Grid-empty</p>
-        <img src="/img/grid-empty.png" alt="grid-empty" />
-      </section>
-      <article class="frame">
-        <h3 class="frame__title">Media query & mobile first</h3>
-        <p class="frame__description">
-          Media query wiąże się ze sposobem wyświetlania treści na różnych
-          typach urządzeń. Zgodnie z tą zasadą, wersja mobile powinna być brana
-          pod uwagę jako pierwsza. Google Chrome posiada przydatne narzędzie w
-          developer tools, które pozwala podejrzeć widok dla poszczególnych
-          typów urządzeń. Jeśli chcemy przenieść grid do części media query,
-          musimy go wykasować powyżej w css.
-          <img src="/img/responsiveness.png" alt="responsiveness" />
-          <br />
-          RWD oznacza responsive web design. Jeśli chcemy dostosować widok
-          wyświetlenia na poszczególnych ekranach, należy w css zdefiniować
-          @media, a w html wystarczy użyć span i klasy mobile.
-        </p>
-      </article>
-      <section class="notes">
-        <h3 class="notes__title">
-          Przykład działania mobile query na różnych urządzeniach (z
-          uwzględnieniem grid)
-        </h3>
-        <p>
-          Brak media query, widok body mobile
-          <img src="/img/media-mobile.png" alt="media-mobile" />
-        </p>
-        <p>
-          Media query, widok tablet (od 768px)
-          <img src="/img/media-tablet.png" alt="media-tablet" />
-        </p>
-        <p>
-          Media query, widok laptop (od 1024px)
-          <img src="/img/media-laptop.png" alt="media-laptop" />
-        </p>
-      </section>
-      <section class="notes">
-        <h3 class="notes__title">
-          Pseudoelementy, pseudoklasy
-        </h3>
-        <p class="notes__description__pseudo">
-          Pseudolementy i pseudoklasy pozwalają na wpisanie tekstu w stylu
-          zamiast w html, jednak częściej używa się ich do utworzenia elementów
-          dekoracyjnych. Jednym z narzędzi jest :before i :after, które
-          pozwalają na ostylowanie różnych treści. Pseudoklasa hover pozwala na
-          zmianę koloru np. linku po najechaniu na niego. Focus pozwala wyróżnić
-          dany element na zasadzie podobnej co outline, natomiast visited
-          pokazuje, że jakiś element, np. link, już odwiedziliśmy.
-        </p>
-          <p>Pseudoelement before after
-          <img src="/img/pseudoelement_before_after.png">
-          </p>
-          <p>Pseudoelement before after dekoracja
-           <img src="/img/pseudoelement_decoration.png">
-            </p>
-            <p>Pseudoklasa hover - po najechaniu
-              <br>
+      <p class="notes__description">Grid-empty</p>
+      <img src="/img/grid-empty.png" alt="grid-empty" />
+    </section>
+    <article class="frame">
+      <h3 class="frame__title">Media query & mobile first</h3>
+      <p class="frame__description">
+        Media query wiąże się ze sposobem wyświetlania treści na różnych
+        typach urządzeń. Zgodnie z tą zasadą, wersja mobile powinna być brana
+        pod uwagę jako pierwsza. Google Chrome posiada przydatne narzędzie w
+        developer tools, które pozwala podejrzeć widok dla poszczególnych
+        typów urządzeń. Jeśli chcemy przenieść grid do części media query,
+        musimy go wykasować powyżej w css.
+        <img src="/img/responsiveness.png" alt="responsiveness" />
+        <br />
+        RWD oznacza responsive web design. Jeśli chcemy dostosować widok
+        wyświetlenia na poszczególnych ekranach, należy w css zdefiniować
+        @media, a w html wystarczy użyć span i klasy mobile.
+      </p>
+    </article>
+    <section class="notes">
+      <h3 class="notes__title">
+        Przykład działania mobile query na różnych urządzeniach (z
+        uwzględnieniem grid)
+      </h3>
+      <p>
+        Brak media query, widok body mobile
+        <img src="/img/media-mobile.png" alt="media-mobile" />
+      </p>
+      <p>
+        Media query, widok tablet (od 768px)
+        <img src="/img/media-tablet.png" alt="media-tablet" />
+      </p>
+      <p>
+        Media query, widok laptop (od 1024px)
+        <img src="/img/media-laptop.png" alt="media-laptop" />
+      </p>
+    </section>
+    <section class="notes">
+      <h3 class="notes__title">
+        Pseudoelementy, pseudoklasy
+      </h3>
+      <p class="notes__description__pseudo">
+        Pseudolementy i pseudoklasy pozwalają na wpisanie tekstu w stylu
+        zamiast w html, jednak częściej używa się ich do utworzenia elementów
+        dekoracyjnych. Jednym z narzędzi jest :before i :after, które
+        pozwalają na ostylowanie różnych treści. Pseudoklasa hover pozwala na
+        zmianę koloru np. linku po najechaniu na niego. Focus pozwala wyróżnić
+        dany element na zasadzie podobnej co outline, natomiast visited
+        pokazuje, że jakiś element, np. link, już odwiedziliśmy.
+      </p>
+      <p>Pseudoelement before after
+        <img src="/img/pseudoelement_before_after.png">
+      </p>
+      <p>Pseudoelement before after dekoracja
+        <img src="/img/pseudoelement_decoration.png">
+      </p>
+      <p>Pseudoklasa hover - po najechaniu
+        <br>
         <img src="/img/pseudoclass_hover.png">
         <img src="/img/pseudoclass_hover_2.png">
-              </p>
-              <p>Pseudoklasa visited-odwiedzane strony
-                <img src="/img/pseudoclass_visited.png">
-              </p>
-              <p>Pseudoklasa focus-obramowanie po naciśnięciu
-                <br>
-                <img src="/img/pseudoclass_focus.png">
-                <img src="/img/pseudoclass_focus_2.png">
-              </p>
-<p>Przykład działania pseudoklas first-child, last-child
-  <img src="/img/first-last-child.png">
-  Klasa not pozwala zmienić wszystkie klasy poza wybraną. 
-</p>
+      </p>
+      <p>Pseudoklasa visited-odwiedzane strony
+        <img src="/img/pseudoclass_visited.png">
+      </p>
+      <p>Pseudoklasa focus-obramowanie po naciśnięciu
+        <br>
+        <img src="/img/pseudoclass_focus.png">
+        <img src="/img/pseudoclass_focus_2.png">
+      </p>
+      <p>Przykład działania pseudoklas first-child, last-child
+        <img src="/img/first-last-child.png">
+        Klasa not pozwala zmienić wszystkie klasy poza wybraną.
+      </p>
+    </section>
+    <section>
+      <h2 class="notes__title">Import, eksport w (s)css</h2>
+      <p class="notes__description">
+        Ze względu na brak czasu i to, że niektóre rozwiązania zostały już zaproponowane przez innych deweloperów,
+        często korzysta się z kodów innych osób. Treści pobieramy wpisując <b>@import spacja "źródło"</b>. W przypadku
+        (s)css możemy np. chcieć skrócić linijki kodu i nieco je wyczyścić i w tym celu możemy np. jakieś klasy umieścić
+        w drugim folderze i tylko podlinkować treści używając komendy import.
+        <img src="/img/import-styles.PNG">
+        <br>
+        możemy również zaimportować styl używając linijek kodu bezpośrednio ze <a
+          href="https://cdnjs.com/libraries/normalize">strony internetowej</a>, który będzie wyglądał jak nasz
+        wcześniejszy kod <a href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">link</a>, np.
+        wkleić link do normalize, który na początkowych etapach kursu kopiowaliśmy ze strony i umieszczaliśmy w osobnym
+        pliku css. Ten sposób przydaje się również do pobierania (importowania czcionek z Google Fonts). Eksporty
+        zdarzają się dość rzadko.
+  </main>
+  <footer>
+    Dziękuję za uwagę, wszystkie prawa zastrzeżone.
+    <b> <a href="#top">Wróć na górę strony</a></b>
+  </footer>
+</body>
 
-      </section>
-    </main>
-    <footer>
-      Dziękuję za uwagę, wszystkie prawa zastrzeżone.
-      <b> <a href="#top">Wróć na górę strony</a></b>
-    </footer>
-  </body>
 </html>

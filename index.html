@@ -7,7 +7,7 @@
   <title>Document</title>
   <link href="css/normalize-css.css" rel="stylesheet" type="text/css" />
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -192,7 +192,7 @@
       <b>
         <br />
         Life hack - jeśli nie działa opcja "upiększania" kodu shift+option+f
-        na Macu w edytorze, to znaczy, że jest jakiś błąd, najczęściej w
+        na Macu w edytorze (na Windowsie shift+alt+f), to znaczy, że jest jakiś błąd, najczęściej w
         znacznikach (np. niezamknięty nawias)</b>
       <br />
       <br />
@@ -271,7 +271,10 @@
         scss, od tej pory należy pracować nad stylami wyłącznie w scss. Zmiany w css nie będą automatycznie przenoszone
         do scss a tylko na odwrót przy zastosowaniu w terminalu polecenia npx node-sass źródło pliku.scss źródło
         pliku.css. Aby nie musieć cały czas wpisywać tej komendy w terminalu, można podczas pracy nad stylami dodać w
-        terminalu -w (watch), które obserwuje zmiany wprowadzane w stylach. Charakterystyczne dla pracy w SASS jest
+        terminalu -w (watch), które obserwuje zmiany wprowadzane w stylach. Aby dodać taki skrypt na stałe należy dodac
+        w package.json skrypt, np. o nazwie sass z poleceniem npx node-sass -w style.scss style.css i w terminalu wpisać
+        npm run sass.
+        Charakterystyczne dla pracy w SASS jest
         używanie "&", działa to trochę jak klasy w BEM-ie, to znaczy, jeśli kolejne klasy mają wspólną nazwę (człon), to
         kolejne ich części można dodawać w SASS po znaku "&" (ampersand).</p>
     </article>
@@ -281,7 +284,7 @@
     Dziękuję za uwagę, wszystkie prawa zastrzeżone.
     <b> <a href="#top">Wróć na górę strony</a></b>
   </footer>
-  <script src="main.js"></script>
+  <script src="main.js">type="module"</script>
 </body>
 
 </html>
