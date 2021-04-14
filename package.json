@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "type": "module",
   "dependencies": {
     "node-sass": "^5.0.0",
     "sass": "^1.30.0"

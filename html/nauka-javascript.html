@@ -348,10 +348,12 @@
         <br />
         <img src="/img/hamburger-menu-open.png" alt="hamburger-menu-open" />
       </p>
+      <h3 class="frame__title">Importowanie modułów JS</h3>
       <p>
-        Importowanie modułów JS
         <br />
-        Common JS występuje w skryptach node'owych, a ES6 w przeglądarce.
+        Import i export są stosowane, aby nie przeciążać kodu. W przeciwnym razie byłby on bardzo długi i rozbudowany.
+        Pozwalają one także na korzystanie z fragmentów kodu innych deweloperów lub dzielenie się własnym czy utrzymanie
+        porządku. Common JS występuje w skryptach node'owych, a ES6 w przeglądarce.
         Żeby móc wykonać import potrzebujemy komendy &lt;script type="module"&gt;
         Aby podpiąć import pod dany skrypt, tworzymy nowy plik js, w którym umieszczamy skrypt i używamy polecenia
         export dla danych funkcji. W pliku docelowym, do którego ma zostać zaimportowany skrypt, wpisujemy natomiast
@@ -363,15 +365,37 @@
         <img src="/img/js_import.PNG" alt="js-import" />
         <br>
         <img src="/img/export-js.PNG" alt="js-export" />
-
       </p>
+      <h3 class="frame__title">Webpack</h3>
+      <p>
+      <ul>
+        <li>podstawowe narzędzie frontendowca</li>
+        <li>ułatwia development</li>
+        <li>pomaga automatyzować procesy</li>
+        <li>używają go wiodące biblioteki i frameworki</li>
+      </ul>
+      <br>
+      <img src="/img/webpack.PNG" alt="webpack" />
+      <br>
+      Webpack pozwala na zmianę plików powiązanych różnymi zależnościami na pliki, które pozwalają nam nie skupiać się
+      na pamiętaniu o nich i wprowadzając porządek. <a href="https://webpack.js.org/concepts/">Warto zapoznać się z
+        dokumentacją webpacka</a>.
+      </p>
+      <p>
+        <h3 class="frame__title">Konfiguracja Webpacka</h3>
+        <br>
+        Juniorzy zwykle nie konfigurują webpacka, ale warto wiedzieć z czego składa się taka konfiguracja:
+        <ul>
+          <li></li>
+        </ul>
+        </p>
     </article>
   </main>
   <footer>
     Dziękuję za uwagę, wszystkie prawa zastrzeżone.
     <b> <a href="#top">Wróć na górę strony</a></b>
   </footer>
-  <script src="secondary.js"></script>
+  <script src="secondary.js" type="module"></script>
 </body>
 
 </html>

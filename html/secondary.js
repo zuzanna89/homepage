@@ -6,5 +6,10 @@ const nav = document.querySelector ('.navigation--js');
 nav.classList.toggle ('navigation--open');
 })
 
-const hello = (name) => {return 'Cześć ${name}';}
-console.log(hello('Maciek'));
+import {hello, zunia} from './hello.js';
+console.log(hello('Rysiek'));
+
+console.log (zunia)
+
+import zofia from './zofia.js'
+console.log (zofia)
